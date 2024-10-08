@@ -1,0 +1,62 @@
+[10/8/2024 12:54:54] Error: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ql_xekhach.Users index: Email_1 dup key: { Email: "admin@gmail.com" }" }.
+   at MongoDB.Driver.MongoCollectionBase`1.<InsertOneAsync>d__80.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.Services.UserService.<CreateUser>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\UserService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 57
+
+[10/8/2024 12:56:56] Error: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ql_xekhach.Users index: Email_1 dup key: { Email: "admin@gmail.com" }" }.
+   at MongoDB.Driver.MongoCollectionBase`1.<InsertOneAsync>d__80.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.Services.UserService.<CreateUser>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\UserService.cs:line 37
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 56
+
+[10/8/2024 13:57:54] Error: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ql_xekhach.Users index: Email_1 dup key: { Email: "user0@gmail.com" }" }.
+   at MongoDB.Driver.MongoCollectionBase`1.<InsertOneAsync>d__80.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.Services.UserService.<CreateUser>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\UserService.cs:line 59
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.DataSeederService.<SeedData>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\DataSeederService.cs:line 95
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 50
+
+[10/8/2024 15:20:36] Error: A write operation resulted in an error. WriteError: { Category : "DuplicateKey", Code : 11000, Message : "E11000 duplicate key error collection: ql_xekhach.Users index: Email_1 dup key: { Email: "admin@gmail.com" }" }.
+   at MongoDB.Driver.MongoCollectionBase`1.<InsertOneAsync>d__80.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.Services.UserService.<CreateUser>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\UserService.cs:line 59
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.DataSeederService.<SeedData>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\DataSeederService.cs:line 36
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 50
+

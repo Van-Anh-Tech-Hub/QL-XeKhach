@@ -1,0 +1,340 @@
+[{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d427"
+  },
+  "Fullname": "Vũ Văn Anh",
+  "Email": "admin@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765431",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d428"
+  },
+  "Fullname": "Nguyễn Thị Minh",
+  "Email": "nguyenminh@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765432",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d429"
+  },
+  "Fullname": "Phạm Văn Toàn",
+  "Email": "phamvantoan@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765433",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d430"
+  },
+  "Fullname": "Lê Thị Hoa",
+  "Email": "lethihoa@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765434",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d431"
+  },
+  "Fullname": "Đặng Văn Hoàng",
+  "Email": "dangvanhoang@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765435",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d432"
+  },
+  "Fullname": "Trần Văn Đức",
+  "Email": "tranvandoan@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765436",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d433"
+  },
+  "Fullname": "Nguyễn Văn Bình",
+  "Email": "nguyenvanbinh@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765437",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d434"
+  },
+  "Fullname": "Vũ Thị Hồng",
+  "Email": "vuthihong@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765438",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d435"
+  },
+  "Fullname": "Phạm Huy Toàn",
+  "Email": "phamhuytoan@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765439",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d436"
+  },
+  "Fullname": "Lê Văn An",
+  "Email": "levanan@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765440",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d437"
+  },
+  "Fullname": "Trần Hữu Tài",
+  "Email": "tranhuutai@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765441",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d438"
+  },
+  "Fullname": "Vũ Thị Tuyết",
+  "Email": "vuthituyet@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765442",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d439"
+  },
+  "Fullname": "Phạm Văn Đại",
+  "Email": "phamvandai@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765443",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d440"
+  },
+  "Fullname": "Ngô Văn Long",
+  "Email": "ngovanlong@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765444",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d441"
+  },
+  "Fullname": "Vũ Đức Duy",
+  "Email": "vuducduy@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765445",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d442"
+  },
+  "Fullname": "Trần Văn Toàn",
+  "Email": "tranvantoan@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765446",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d443"
+  },
+  "Fullname": "Phan Văn Hoàng",
+  "Email": "phanvanhoang@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765447",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d444"
+  },
+  "Fullname": "Đỗ Văn Thanh",
+  "Email": "dovanthanh@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765448",
+  "Role": "COMPANY_EMPLOYEE",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d445"
+  },
+  "Fullname": "Phạm Văn Thành",
+  "Email": "phamvanthanh@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765449",
+  "Role": "ADMIN",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6704d9ebc37d91d036f2d446"
+  },
+  "Fullname": "Nguyễn Văn Khánh",
+  "Email": "nguyenvankhanh@gmail.com",
+  "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
+  "PhoneNumber": "098765450",
+  "Role": "TICKET_SALLER",
+  "BusCompanyId": null,
+  "created_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T07:06:19.382Z"
+  }
+}]

@@ -1,0 +1,5183 @@
+[{
+  "_id": {
+    "$oid": "33d6df818db70f4baec035ae"
+  },
+  "TripCode": "5HN4883DCC11",
+  "DepartureLocation": "Thái Bình",
+  "Destination": "Hải Phòng",
+  "DepartureTime": {
+    "$date": "2024-10-31T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-31T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd006",
+  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "Price": "166524",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "74ef9c28c7afc518832105e9"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "450f72211a0f71dadf91d997"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "64b25a8f8e2c989e82590ee8"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "975f1ac27f6eaf485fda65c3"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c6d55793b476b871b1ff3f47"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8df74925e3145992e473a35c"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "77ac81715a69225ef7f007fb"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2f98b353a722a862a2b61c08"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d9ef2fc678e5b6b7d5fff51e"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e2d4e0f30f0392ea4b4f88c9"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5364f910eedee4141b4d1aaf"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1f2e7a935b7606923ae69df5"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b5bd5998499892e72b749dbb"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4a3c9e5b57c3aed1e9b03f06"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f5e7dedef7213fa4f0811678"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a368d8f51cdebae96b723b81"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e22b535d419dede40eb97793"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ade696c6c59a605aa3237168"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "de83dd46a588d6a4982994a0"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5a591ff15421e2a05ca4a2e0"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "486c4dbc194731bbe05ef23d"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3a8a6504f9f722c51392da4d"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ff7eeefb615df2d545fe31cd"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cf4666da5ab02b58f0687a8f"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9f79f3a94c3ae44dbd86bb00"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4557335d7d997c56319471f3"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bc9a643156fc2a3fd024d1d7"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3f26943b7a259a987c55f202"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7a5c4eb83a21e7642dd13e57"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "90dfeb1d98af8265c97959a0"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0f407cb35d4cb4e1040fc016"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f6f3a71c8a0008015a9deb87"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fe4cad676a5536149ed87519"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7e02c8239d762e59386d4942"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8d03b88cddb76d0d34bc550b"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "56fb5c862d5bfc3e82f30547"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0419db4692c5878879df5bf6"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "883b3315ab309ed21a6eb738"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e572b9c29ad425bbe7eec428"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3fda644dbd7c13d164ff739f"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "803209bceb7ae27bc5b86954"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4ec67004695e3f07748f3699"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7e8adf7cf164a798da80c98e"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "62459035aef70636edd102f6"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c8877ebe3a156c2d7e5818ae"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "bd94ad19dd2f08dc8b4f3c41"
+  },
+  "TripCode": "5HN4883DCC12",
+  "DepartureLocation": "Thái Bình",
+  "Destination": "Quảng Ninh",
+  "DepartureTime": {
+    "$date": "2024-10-29T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-29T04:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd006",
+  "BusId": "6704e2d5fc13ae4c7c4fde06",
+  "Price": "173396",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4c3561e5846242dc252aa1a7"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5be05b6ac0f9f8bb4f9ef86a"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "31466db9232164eb3bc056e5"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "54e84b034a7ab7204890d76c"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0ab292eab13502c0dc91c8d4"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "65f086378ef902177451433a"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b2f6231147ef3674468a5c81"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "49ba0a91a0b019f634ff58f4"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "18b1a96a0585976003cbe43f"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a5057cc3852d935a43bb181a"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cc297785d83e608c8c24d49c"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7922f1827a25f2bc7ce1d62c"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c2816cb2e12d27fc18b95d15"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8e665bc2673cbd8af9717ee1"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6b45adac530ca3df92da3d08"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7e7a9bc1cb00ce681449b83d"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e961014e74c149ae91fa3f8d"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cb56d1a0007455abaa347cb6"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "328b9fbb000a3958386da822"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9ccdbe859b7126a2ace62e43"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c3392d95f74dde8f4dd5c5b0"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6792febe8437b59239600115"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fe310cf939b3eae51fbcc6be"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ac83187591bea1ad17de581b"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "299d2ecbf8bfe21df475cb75"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d632abb1c15e8b8fd7de08f5"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "35c97bfc2e3ea472c5cfd215"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a4c025b2f00587fc907302d0"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8cdfdc8384c225945e84bd15"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "784544ccd57172c66af0b0e0"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fb1639c49efde2d9130c5363"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ab7a823ca2066575a6e6fd30"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a7a8bbc7b6b99225b2e192ab"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "dc9950da900997e06aa47834"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bd6e466b8ff70ed82e7ef795"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b7b60aa6730ed59f3aba691a"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e9f86910dcebc3e38054c010"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b8e0e3bc823fdf764c6f2e80"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1cf43ae4bbe6a3d261bcdd51"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c752056a7f970e18d97fe37c"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bc0cae3ba6d75b1e5fe0c5c5"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "edd52d5690df075466053048"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ce50cab386850e7e58704bbd"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "51eb4b5054b87adb5ecbe951"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0c97b8ead4ef792389c5914f"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "d587d2e7a8a4bd69ab096840"
+  },
+  "TripCode": "5HN4883DCC13",
+  "DepartureLocation": "Nam Định",
+  "Destination": "Nghệ An",
+  "DepartureTime": {
+    "$date": "2024-10-31T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-31T04:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd004",
+  "BusId": "6704e2d5fc13ae4c7c4fde08",
+  "Price": "175536",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d6acd53ac272c3d769ca4406"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "165c19527d009ec271353413"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2e2d7747d419124c5822bd96"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "130ab834c6b43604e34faf38"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d4b73391cb1fbe932895aa2e"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "688127a9b17c9a7ee5a159ba"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5f8cb6accb0b35f4e79bc6ca"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "10b628df289c48aafa87786c"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4835ca151a1f7b9d8a33c905"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ef3d84aa78f80be6b59d7faa"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "539b776422600262584b4de9"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3fd970d79884e94937d5e364"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "118352dda96a0a23b5170355"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "28d9b59c30b4bce418e80680"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b8f1297739e6e96a6ad2f94e"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "054a8ecfac8f0097222b45c8"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e696b7cbb4c431fdd730b354"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9190f2dc004fa134fe2ab91d"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7c256bfca41a0a3577813a35"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7ab4f63f448c46786a4d6af6"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ee1a24cc5b6c312d725c5dae"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "dc1725cae3ec47208b93fa25"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "32eaf2b8334dfe761c665ba8"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0c8b25b9e446a44771afc277"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f9f4f54dbafef79d5df8bb35"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ee90572ef419c2f990090f66"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "78ad9327c191daecb60cb557"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d6f7cd5dd4d8d023a11cbfb5"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f5d5126fdf22784e19bb022e"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "aaf63bad04dc5c9042d4f054"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1bd9a8fd9b0f57b89f25cd49"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0833937af2f6a569a3bd21b4"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "35d8f0f509a2bf1d4e0410d1"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7535edfaa595679c708f5aca"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f18526f9ce649d48dbf2feb3"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "261a7de1b1280a375547ef4b"
+  },
+  "TripCode": "5HN4883DCC14",
+  "DepartureLocation": "Hà Nội",
+  "Destination": "Nam Định",
+  "DepartureTime": {
+    "$date": "2024-10-20T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-20T05:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd008",
+  "BusId": "6704e2d5fc13ae4c7c4fde09",
+  "Price": "157605",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ff4ef7d433128c28a65be826"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a36dcf46cf685645149c3315"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3dad0d0866570a608e96cd98"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a2efab7a8e2125f969c31dc"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4c89df987017778489d2e283"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "029e44aa053830cc84284e1f"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f1f4e7879740d648969e0db8"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fa0ee36955d60c93c5c2ed6a"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9f72e1d2c4ba59f81676e774"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "86275f5c0c9ebf4cd9c26ea4"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "485e8c171ed1d9818233607b"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7d906c88e3c9b2d057eaf9ca"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8c1bb70c025625ff8aa5e34e"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "91a12e51c0d922b19c1ea259"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "153c3a6f0d5c8054005bc662"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "335d7c4b7cddfd11ae0ad18e"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9f1a6b7a40fb67ba8a95a285"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b6d5934a86948b3176719620"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c9ce4ea2a14a8e267356179d"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d6635714eb20b7a84173498b"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "28569a83835ab19ace844ad9"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "73a6db5002e033284826691f"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d7a2280a1b155dfe9b055300"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "aadc9678d4e81b6cb51c75ed"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c7de5889d56bc7bd7eeff5e0"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b0d603203b2b4f7f0d3f3903"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8afab0c6b703ccdec52fd0bd"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "16f6bd8b199c7d9cfe661b3c"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9724b2c0e575ac577f64540f"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "20a4b138025a8a93ab173489"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "54ef0555d5e2b890b39c08f4"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cfd63858f970b35799a6d94f"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9a48deca5d0e3982440455a8"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4492dc7e8fbcc3525f346e08"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3a82640a998c70c7704d20b1"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "aa8f50ec082804239494d49b"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f9bd359fa43071df7594c718"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9713a248527e15973868e8a1"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1587dcda86cbbac4e0a69060"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "23cbe164babfe4cc836f65b6"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "25ec98f54a7f01c69a841e58"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3d35081450d9482dee9c74bb"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3c46d1c58a9f8214cd30ecf4"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "06b9bd58d3fbfd436bb27a84"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5bc156d0df9e9a58181c130c"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "0490bfc342764601141ba6c7"
+  },
+  "TripCode": "5HN4883DCC15",
+  "DepartureLocation": "Nghệ An",
+  "Destination": "Hà Nội",
+  "DepartureTime": {
+    "$date": "2024-10-09T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-09T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd005",
+  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "Price": "152875",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1cb341e45de07d258610f242"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "944edbae8160f27d28ab8203"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7709a66e8f06a4ca721f1c52"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bfcd510bfeaa5f6501e15f0d"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3e260edf22206f9d10139405"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3b8de33fe138ee7d1a09281a"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "204c81c5f1942b6fc7ff0409"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "861ca41c292fedaf373707e7"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "50a309a37f1e18c1f100fe09"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9255f116037a03f5d72c65cf"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8fe11719db4cf44b70bf6f40"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "76c76d4c40dae0a824944654"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5074fa474b71fde5092d8198"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "85438c3b9b0b15f10d9ace7f"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "61e770f35f15213d8ac7dd6c"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2ed4f71938c9b65332bb8737"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3f171baff8abc927e8cd1c46"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "12c353a12b28a80eaa7497d6"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "493d288b292ce7818198e3f2"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "01d1a05c2f46dc2a20ce5ae6"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cc368a326b8cbfa8d8af63c6"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b1588ac1535a7af3bfba045a"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bebd41e43d89698de7ae63b8"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1f64a62578ee43f850d7cbad"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a29531b25154d8342b449efb"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "55a6a5e1d377f99e139729c8"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fd0f8a238486cd192efb8420"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "22a822d33a7301d8d674c5d0"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4a3f124a6f69b5fb375bfc95"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f572858222518fcef86e13c8"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c7d111d37f9086449e48d7a8"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2b6eeb9bc8bd124bf2955edf"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "892e296f991f12ab9d1dea06"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "91af76f999de16fb1179d6be"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3bf833bc3f4302f897353ead"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "28b441e9187321c954f6f846"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a546dbd3450b6ad4749fb646"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "16f04027dc8649e7176ce604"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "188cc4863b0ca5a9d865defa"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "55fc9287e8dd44f87a37e921"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "93db69ef718cafcea0e278cf"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3599212dcd0e5012584d70d7"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "094c2469a3495b1bae86a1c1"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a080923a525c2e6a968a59ef"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e65bd76948fe43fd1ead068d"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "cdb2a6b7f4b45175f90a661d"
+  },
+  "TripCode": "5HN4883DCC16",
+  "DepartureLocation": "Nghệ An",
+  "Destination": "Ninh Bình",
+  "DepartureTime": {
+    "$date": "2024-10-31T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-31T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd010",
+  "BusId": "6704e2d5fc13ae4c7c4fde07",
+  "Price": "144258",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "24d8332075ba8df2914d13b0"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "29e8f7cdb91b343c157a7ea9"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "de6c0bf2a58deffb59e964c9"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bee180803708c587ab226908"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "71f82fd4f63b74d7e3c794a0"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c3b70d68b07880669de5e54f"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "46241ebf6e28c07dc66b6dcc"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "eaf32a66a4f03c8f7185d172"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cfa3c516c02fb0d2e4a94cca"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d428c99e82acc60db8400a85"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "25d8fff0b3d42fa9a1f614e0"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cee07c656633b188aba99725"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f09b523a775b4848ad8283ea"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "85b8c3eff97a4d9985525a89"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9c3cc9d75f50a68a8cd7ba83"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "de61eac8f16bc9313f2cb33e"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "167f6189b378bb2f59a0729f"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e57413764f37ebf66e45cd48"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d0c6e56c27b5b90b762ce3e0"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b434363fad27d1b0dffe91d1"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7dd49812beebdd4b030f9a52"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6f12514feb5ee9c6bd830353"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1ec76ca888ace250f76bd16a"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "10b564c81a6a6b7e903abd0f"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "894d0d1d589d5eae8cbe2670"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e2b80381f2245e3f325db81d"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a974f9b5ae30d0d1f1a90eb0"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a63f2e7adbebfa0cf47e95bb"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "25a541b682132151d6e13ec3"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "88e8a914f33913086a3d938a"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "56615c60fd7510186ac4f3a6"
+  },
+  "TripCode": "5HN4883DCC17",
+  "DepartureLocation": "Hà Nội",
+  "Destination": "Nam Định",
+  "DepartureTime": {
+    "$date": "2024-11-06T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-11-06T05:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd010",
+  "BusId": "6704e2d5fc13ae4c7c4fde02",
+  "Price": "129641",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b214023b446424cb5f18dc55"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e9976e795bc0e1dad71bb976"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "249fc4a40d391fe09dc31e36"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a47e574ecda715af9b7d7a5"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "11791b3a3d963855f96a0771"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4535b6f045c80aae3d2b0d84"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9e5290b0f174fe0d84458f4c"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "da7eee635c11b6a0bda7d64e"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1a470dd8ecd6265896829bd8"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "509c1bdb7a6b025b838275eb"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5ced6c602b05fc74cd13905c"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "94e8c2e3ef4cec6c7a36a64f"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "abf2cc2585318d8ad2873c20"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "655495646b406f63abe72195"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4a57cc94425cb6f6d7c533ce"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "81808855a0daa79ffa853c43"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3e6ae7d643c2c5a418d031da"
+  },
+  "TripCode": "5HN4883DCC18",
+  "DepartureLocation": "Hà Nội",
+  "Destination": "Hải Phòng",
+  "DepartureTime": {
+    "$date": "2024-10-14T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-14T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd007",
+  "BusId": "6704e2d5fc13ae4c7c4fde01",
+  "Price": "176211",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b1392f8369ee96a6bb440c79"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d118eab132f6c32791a3a3cc"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3f8d00688a4a672e313688c0"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3af7f8ceaaebd2ead2e1e8f7"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f3d04c2c39df0a86922c407a"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a291cdd79d1c0bc76e01f7f4"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0d7c210421fa28a29e2f02be"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0716af3244c622fb3cb1afd1"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "97944482d4d39c27148583b0"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "aa9be0858b5316fcb0bd3876"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2841d05c97c1d319ddef1fc3"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a5f927c16d8469743c46c5b9"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d3e38fa11db22b90e2fc8862"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6dbd9c670b91f4a51f6e2fe6"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e8b89f4ed87d0d4c81ea518e"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "eb195d85b19bbaca8b8c98d6"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ed7d26f1f8a77b75c30883b6"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4315065f80872862db804673"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1e1463dbbca93dfd0cdaeb75"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "47452437fa1cef7d0c5e3273"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ff95245b055bfa00ee083149"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0ee5d1a01d83e7538f8f2c94"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "12bd7fbcd539bf26f7ce2c65"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "950b10430fb123a86a6369e7"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e669e3f8c72864de7ce99c5c"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e2940b7f0e91e4a72daaf30e"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c57c4fbc413935413295b1df"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0d72d60af76d9e61019ff4d8"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "966342c315253e911cd289b6"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "706ada8e835c47594c148c22"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a3e839b910c27949fb0f525f"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f221eff0b276536d28e21b92"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d01edb6f8ca54645a0c4ccfe"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fa6a8f4c64f5e69a74ecc319"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0465d54290737b1c8047c87d"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "40ad300dbd73e08b6034cd99"
+  },
+  "TripCode": "5HN4883DCC19",
+  "DepartureLocation": "Quảng Ninh",
+  "Destination": "Nghệ An",
+  "DepartureTime": {
+    "$date": "2024-10-27T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-27T04:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd006",
+  "BusId": "6704e2d5fc13ae4c7c4fde03",
+  "Price": "169582",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e99f9f93b47f1751c44f8d30"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bb6797177792faf20377103b"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "928d05c26c3ae904247ff68d"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3cf6016e467cf7ca18dd1799"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "62a92b8999e21f06fc2e882a"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "51d35cbf4f02ca63a516af12"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3686aedf7d29090cefb8582f"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "46f3fa7ab0ff226dc28c06ea"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0312e4174cc178fa67aab2e7"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "37343e2fb8250f6f85045b95"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "294fa9fa59346d85983b343d"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "202ce3c1cade921b09afdd52"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6ef82f5dc5a0013989cdc5b8"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4e97214ce7d0e1af93f53585"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4ef70a8ca89761e95184a94a"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5f30b32876e5fcf38b2f5484"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "f7e10f05ff834ce75cce6953"
+  },
+  "TripCode": "5HN4883DCC20",
+  "DepartureLocation": "Hà Nội",
+  "Destination": "Ninh Bình",
+  "DepartureTime": {
+    "$date": "2024-11-03T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-11-03T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd007",
+  "BusId": "6704e2d5fc13ae4c7c4fde04",
+  "Price": "127289",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4e9c8e8de021e06367a0798e"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f90fdb7ef8fbbbc5a912e293"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1bd937c3dbb3340c76744f4a"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4cf5de76be51cdc36d56cd64"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5ec90e4b015336c8008672ae"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b95b36b189c0313c62722b2a"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "461a74689db25911c32361bd"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "17336a99197517ba7d4d4442"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7ecf7521fd6ea4813cf03b38"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ebe84dff41cd0b153c56543d"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d4db1413336d4092080347c4"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "375ef6c57d02c41abee9b04c"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8cdb6850dec813fe428f47a6"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bb21c408860fa480b77af131"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "89854294528d539c21cf0ffe"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "eb0f06746c3aef8d5d9d45f5"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "955cdd62408655f53550a926"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cd808650c90d82e119d458b5"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "97568a2f5a8af3d8c2b3a950"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d0c1dc71047ad385fd7afbb2"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f5772709ac65b5cd7e09e0d0"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5cca49c28b8e95b6a086165d"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "582c5b989d56d1ae7367ee9c"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fc1ed6a8ccb93a8ae5763e67"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e1412f64ad31ce06211f5854"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b916ab403c21684b07d7e2ed"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9d3acc4db60b5cd24cbbdcc3"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f82a01b11d7864e30df0a007"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7f47641ef759b9fb126d6ea7"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2a17943efdfdfad698ff8f0d"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "339341fa24b204463024b194"
+  },
+  "TripCode": "5HN4883DCC21",
+  "DepartureLocation": "Ninh Bình",
+  "Destination": "Thái Bình",
+  "DepartureTime": {
+    "$date": "2024-10-31T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-31T06:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd008",
+  "BusId": "6704e2d5fc13ae4c7c4fde03",
+  "Price": "154790",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9725549e9d3a08c1432724b2"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5c6c2f8e000db8078c0b95f8"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cffaddfe3212ad80d4699585"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "32563e01497a70ecb4e46543"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "18d1747bb9a127434ef3422f"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b1c9b65ae7bfb084a1d56c35"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "63cb490f213031534def7324"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9f8321b180d7b0c5090d0f31"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "69fd2aef179dddce77047b51"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "58e7b926edcdd51dbdacfc1e"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2452817e68c22db7ba88b792"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ccc88e9e828d110689821eef"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7fc79dd349d7274d7a4a5239"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fa9b502e3cff7c1569644298"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5e4018a1434647a97567d0cc"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e9ec62ad1f8379a3448180d6"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "29d73c6d77d6203cb4b31b06"
+  },
+  "TripCode": "5HN4883DCC22",
+  "DepartureLocation": "Hải Phòng",
+  "Destination": "Quảng Ninh",
+  "DepartureTime": {
+    "$date": "2024-10-24T01:15:26.503Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-24T03:15:26.503Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd001",
+  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "Price": "149248",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9ca05a01f73c571c1925964f"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "10f903bd9886a83b5ede1414"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "958611ec0a1b78acc735c0aa"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9592c1c3cf7c579c44bb1a43"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4b6ff7594f4d0f9a4328ee6a"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1bdd39690866dee5b9ee59f0"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "abc93e63abb5a07dacc986d1"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b3e32c06c3c33dada0e7a8d1"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "99c4c55e30d9d1ae943b1835"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "55e03f55133d6bc02748df45"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "945e2ad2b8cc0a420ad185b6"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "35c87f7a442d075cd0b8e50b"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b20d7464b2f842eb16bf6ad5"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "557636deaf874e48e33fbad7"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "161bc89275b83730f3d08ed5"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "289ce22565baf4df079c35ee"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c8100d158027b14b113c3820"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "13e30a954a0ea97060a63770"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "acc7635d3a701053c4fddea2"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a0f5c6009ce668950a21eec"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b43159d0af48a73eb1cf9784"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "733e83a92a5d22bf91a6650c"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a07f1f6417108919e6c680c5"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8ef09936adfc6562a83a8b2f"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a972ee502c2683d23451de5a"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "18dcccba5699ed6dd7c7f268"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b737d342e7cbf9edd87eb8e6"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1eccc0f391e60147cfad3076"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "47cb7b790a7d210749780bee"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2475862264121bdf5463837f"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c9ee34ba27f422a4db3124fb"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "85d4c4889074aa8efc663bf3"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "95c11bb8cbbc2c9aaddc16a2"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "66ed65f0e68dd9acef88b243"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "91fda1fce549774fae775633"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "9a5dd8ddac7a120c9925257c"
+  },
+  "TripCode": "5HN4883DCC23",
+  "DepartureLocation": "Quảng Ninh",
+  "Destination": "Nam Định",
+  "DepartureTime": {
+    "$date": "2024-10-26T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-26T05:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd005",
+  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "Price": "122148",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ce309fd4f9bb6389dc6761e8"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ff65adde688985e1a87f2551"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0ea741609431854dd46cd167"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2b200bedef539eb316edf39a"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8353f09ed125cd803d447bdf"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f84d35f6a16db3b05da0aed2"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a85909644bbac467adca64ce"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e571f372b3cde24ed4cc729a"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5f6494ec01700c36e21c31c8"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f6ed14f938c595b38c4da01e"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "054c0558b231e319073c0805"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1f57cd7de90a17c5b49765f8"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9592f351685bf67357b73b86"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6309f4c234b7566461b7cf15"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "354a342e13c392d375fae54e"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e80122ff8c8f0399ede1f9c1"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5c3b019dd8ba3078f9c993ac"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0cc710f1cb5506e31ab1e2ec"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b1c8019bdd323ab129c7bdbf"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5e7e3eea22ba886dbf4f96c3"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "44321cafc64421fcd0370b1e"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "41f9e71c88c80cc8e2697974"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b27e8a47211be0b3bcf8b682"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a891ee7677455dcf506c40e8"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "46ee5a4b1edf565f58680bd0"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1e7748ed841a6ee1f79c8d38"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6b6f36045850729a45c9d280"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4cdeddf6560da65c2763271c"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "29fce71f65a43ff56b0d2092"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2b8ea622c3d2dafb7f3bb33d"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6f31f94a009ed6e565380ffd"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6a04c5960206deada458cd3f"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5000bf0700f062aa9f52d866"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7b0fc4bc4421fa54fc3f0a47"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1aa02a06387faff4545ee4e0"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "78941d7145282682f8e8f6de"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "38d96b160e7b1984839be7f4"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8744061ba8b4e8fcf514ebda"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bba5f7121c0b4a36b31dad96"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d5bdc02a6d4220062b34b470"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8d9dc48a07fb41bdc4d5a4f6"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9efcb3152345aa15ddf30dc6"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "872fe06ec5ef34de968c6f2c"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6882391a2d331f7f7e1fd92c"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "578e208eaa41d495f50a8d55"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "b66ea7bc9cb4a5d037b45620"
+  },
+  "TripCode": "5HN4883DCC24",
+  "DepartureLocation": "Thái Bình",
+  "Destination": "Hà Nội",
+  "DepartureTime": {
+    "$date": "2024-11-02T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-11-02T05:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd005",
+  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "Price": "142490",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3bbad81d3c7429889d981ef4"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2d59a64037dc061311983ad0"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cffab352a8932c26a8910cfc"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3ff63f7a1580aa0df75c95dc"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "172c5ab01f8e511bcd3d811b"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9a67db16d09fe3be5f08ca77"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4f81edef86e457a4b14a8b05"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f9cf5479a621df1a8d5ac336"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9e54acd7504fab7443de4016"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "efdcc306248a2d4a0d823056"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7ae62a33be4cb435da16ff78"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "95fb8f5a271c167cab129338"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "12bd0708b40526d0371eda86"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1877992de798507a6e107a87"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "74f5e9ba723e7c4659f4133c"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6d43703c708c2f39a265e510"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "24f9c904f059336428d0096f"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "04615b3e4178b4fc1e40a4c4"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b946ece8205060ccf3de80c9"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b02119a9d9c613471c17d4e7"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "338e0db54bb5a363aa7f996e"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "dcd87d1ec6dd09ad544a6a68"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b13e1bde8908a5bced32d3d6"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f82ef83d3e544976aeb23fd7"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a5d03c81c56df61a808e0152"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "971e0219999eff9a0e4daccf"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3b86fef6a68eafcd30a8cead"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "71357c643cdea44ead59e135"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "15eaf9e011002892d82748db"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e454a61a23fad8aba9333950"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ea626fe14186fcbe29dd32ae"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6c2157aa77a9f9bad45dfe8f"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c91b971c250a4907b493ba8f"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "11ebf8e4b7631249de70063b"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "15f73cfef7bbcff9bc49e126"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "3f28c89d5b260c3bc8f8dcfb"
+  },
+  "TripCode": "5HN4883DCC25",
+  "DepartureLocation": "Thái Bình",
+  "Destination": "Thanh Hóa",
+  "DepartureTime": {
+    "$date": "2024-10-23T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-23T03:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd001",
+  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "Price": "140365",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d5ae84c09d3aa2de94690c93"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e278d5502ab82f3c56624f1a"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "30fb16c5a8df4cad2437bc70"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "52301a63317be7143bd60729"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a624e286fbebee60f305365d"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2a4b962fef43b9021366bd87"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "86e6d147069f6e70a1e7a401"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3cbc19b0853785ab9a12cb24"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5be959587b01ca6de84607e5"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3ef07ee36c70497f896b2be6"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "86d53901dd7b1a7742aa08db"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "04cbf46376ec0f336eda40c8"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "010c8e90038fd18500103d87"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6b4d7c9bec2b98ac8cd875f1"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a9e723dabb752510bf4fcd73"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6787b7f4047e50b15e03a722"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "69e374f0f102d7bbeaafb797"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e320abe10aa54e877769a0e7"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a7ea47f5e1cf97dc8d0e236"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1008e0726ec3fa2e3733813e"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c4bd4a2f2ce8c2e9297857ab"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "45c8315facfab8d54b417d9f"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "54cdc13422b1f8d0fbb49b81"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a013907d9e8b2bbe36341a9"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "32e8ed8d278e96fffe86cc51"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "15142db974fc623d7533c0cc"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "373cdf647dd1d234ea46a243"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "dad2df334ecf6799fd7f6cdd"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "49c95c34cce46ad7212341d2"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5cb661c18925a84aacab3d2b"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6bdf0d473d1015cb29730bff"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a70bf94e1a9276ab46c375cf"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ab88cdaac8838e760b0a75eb"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "770699e92f4b9e28a4fe3138"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3d1b4b0e130103f61c3e0485"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "31bbf55e1db00710076efd5b"
+  },
+  "TripCode": "5HN4883DCC26",
+  "DepartureLocation": "Quảng Ninh",
+  "Destination": "Ninh Bình",
+  "DepartureTime": {
+    "$date": "2024-10-09T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-09T04:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd003",
+  "BusId": "6704e2d5fc13ae4c7c4fde09",
+  "Price": "170656",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a1d23f2f708ad374081a3b3c"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "65baf606d26046ff3ed39b6b"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "607e7ee43d2e11daf72c43c4"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d0a5e583d46c7a16e715d63b"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a86499ec85221ee84b35ad24"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3b0dbadb1d502ca1de9a82d6"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5967d873d49afe41f5173876"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "41ca515e637f22702e9ec238"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2a17fe46e913b485babd614a"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a3aad252695f43e5ea39951c"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3b9b6828e25dce2f17d7a091"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "dc69946f0ced1f09496d9fd1"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "da1aa24978a21ca040402012"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4a1632203da6e363b4aef95f"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "44694cbb8f76648bcd26f00f"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "00daf641aed7e6d1dff494a2"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d1f82f16be56184536b8cdba"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "547c02dc71b7c4438d38c9e0"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b898cb598db5e6681fa5acdf"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f518958eeafc26246567a985"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4eafe773c584a5238fff4cc3"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "487442b26d712b2a62253e3b"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7c774e531df3787ecd714c98"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cbba04cc5d23d8c6b17016aa"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6541783503d29f19b2eba224"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0b47c1e1eff98aef202e4924"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0a7ed5ea871f262e0787e3c2"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "292c4f8464a00a8bb864b5b0"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "92793d7aba6e655b93189105"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2562c296c0c975649cca9951"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5a25449448fd8211421474e0"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8caf4d9211d389b151286f56"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ce19d934736bc9518dc1f1bb"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b751800a5d1d96d73d2e0cbe"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "215c13f31a6eff9e5ee74414"
+      }
+    },
+    {
+      "SeatNumber": "S36",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a2bc45ddbb1d1e66c2d715f5"
+      }
+    },
+    {
+      "SeatNumber": "S37",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2508ede53acce5f8f92a2fb0"
+      }
+    },
+    {
+      "SeatNumber": "S38",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e190ce0011f5d56c08b5665d"
+      }
+    },
+    {
+      "SeatNumber": "S39",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3e56ecb162a958bb73cb5aad"
+      }
+    },
+    {
+      "SeatNumber": "S40",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "861b1e5f9fc0782c5fdd5e37"
+      }
+    },
+    {
+      "SeatNumber": "S41",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "40f933329cbf7f93e7efa67c"
+      }
+    },
+    {
+      "SeatNumber": "S42",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8150af499bdca4da1f3486e4"
+      }
+    },
+    {
+      "SeatNumber": "S43",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2e9f655961587f5c76b9d44a"
+      }
+    },
+    {
+      "SeatNumber": "S44",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "781d1222db53f7061bd12503"
+      }
+    },
+    {
+      "SeatNumber": "S45",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b3de75e6c0b03a31a1582d4b"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "2554828872459248ac6918cc"
+  },
+  "TripCode": "5HN4883DCC27",
+  "DepartureLocation": "Hải Phòng",
+  "Destination": "Nghệ An",
+  "DepartureTime": {
+    "$date": "2024-10-16T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-16T03:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd003",
+  "BusId": "6704e2d5fc13ae4c7c4fde02",
+  "Price": "131436",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "75d47053a7d0555ab23bbc9f"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "826112769609d8cfbed8034c"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cb65a5bb5dfe79ff3cd382b9"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cb30d2a4d5690af514dce2d3"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c742e15bb4f7ee8e594310f2"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "17c88ff8030a1f0389724161"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "21c66b0ebf795240c680f548"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1d3cb24ce61e2e6167c70f54"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6933bfbfb7c02fbe4c1fa8e7"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "54d0c19d53f005b56426415b"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fc16774e9be4f6f3a171e30f"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "04840811b9434dfcffe0cbc3"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e73cd32210c754b814576572"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "26cbbc5e78b926261fb0d663"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4a7d61d65149f86b5bb5dc75"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "13566db8a54c066b7ff4d76f"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "8b8bcb37ca16089d38301077"
+  },
+  "TripCode": "5HN4883DCC28",
+  "DepartureLocation": "Ninh Bình",
+  "Destination": "Nghệ An",
+  "DepartureTime": {
+    "$date": "2024-10-11T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-11T03:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd004",
+  "BusId": "6704e2d5fc13ae4c7c4fde04",
+  "Price": "169840",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e943a1e33253eb9532b01cd5"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fa645161674b235251c24e48"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "20fad215907f4b76dd615a90"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d65f0f86beaad03f9cd66146"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4e40179f17a8e0804191add0"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9c11a9051236455272e48662"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ac890c29dbba4d2f41648c1a"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "65f23d5364ba2a8956f6dec6"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8c88c4883a5bccc4fbafd41d"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "10a8d17585028ebfdd7bd97e"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2da0d8011b68f4f23d254cb4"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b5f1e262991f8964bafee84c"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d29d89dd6691b4a0f76e8a80"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8c926c27aac834d5553a4d79"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2dff8eb3e61d2f1852a583bc"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "81409d18953d1750dcf8bb31"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3726ac2d59b3ea53476b96f5"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b2f9d384c31b1dc1cd758300"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ec412836ea8d31d0048938c1"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cd0e00c067bfd54f0b25de52"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cfcc91f3f7e6a46eaf9f7b06"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2aa2b4035d149f21f84057fb"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "81d23d24d9c6c8c7ccab0d1d"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "90e48e123eb3e66033313123"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "53951f4f39bb575ccee3d52e"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fe0c67ee0da37edc8fd89b9c"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7cfad5d7d1e98ead3f2444a1"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "6c4d1ac7baa31c4b157bcc96"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "733105d00c108f6b006b9fae"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b7026cc0d4d6cfa5ac74ea35"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "66f041e725149ff0f6771736"
+  },
+  "TripCode": "5HN4883DCC29",
+  "DepartureLocation": "Thanh Hóa",
+  "Destination": "Nghệ An",
+  "DepartureTime": {
+    "$date": "2024-11-05T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-11-05T06:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd009",
+  "BusId": "6704e2d5fc13ae4c7c4fde01",
+  "Price": "139676",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c5d859e3cb9c2ade09bfb600"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "49768d9d6aae02b16a34953b"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "8fde765673ed1444388f78e4"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b41c5d11652fa04764438120"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "428227168d6b80391398a3c7"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3270094374826846d5304a44"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c515b22c32107c9cf1ced66e"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e9776da46335a16baace562d"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "5df34b6e16e88b845d799415"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "38b1f3eab90c13d4046d0604"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "33276ec11ae031730dc2668b"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9e6b606187697ca45e5ba519"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cfdc67a9e9f2115a2d5386aa"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b21e99780d6543816c789636"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e176833a0be939ee09749771"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7836d5e05f608bde706eff7e"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "177267308da94a22e4e210f9"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "75b425d170bea5ded19abe99"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "36b0bfba94358b39c3e03e95"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9b5f34fc106052d0c43fad09"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "92c3c9f8469f8e0966f46a09"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e094726cec97edd0acdb022f"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7a72d7358a7cc4538de88b72"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "247bd2e11bd002dc5b11a034"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "391511930de26889f2b4be7f"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9e5419617d3fcdd969fccca8"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "82b680eef9a5e07e042364de"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "57cda316d6b31fb06f79f0fb"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ce6ced7ea48cdc5d6bbc5d4a"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "bfc0f84657ae05d0d910a9d2"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "f99a92815e6c048f6aecac47"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7567c7c041f8548c9f2dbb1f"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "cf7b4291fc054fae1be5ffeb"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "511558a54eb549a9ec64931f"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3f07e5ce7fc7bbba8485a258"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "fefb8e99079fb9a6f8b3b00c"
+  },
+  "TripCode": "5HN4883DCC30",
+  "DepartureLocation": "Thanh Hóa",
+  "Destination": "Hải Phòng",
+  "DepartureTime": {
+    "$date": "2024-10-25T01:15:26.504Z"
+  },
+  "EstimatedArrivalTime": {
+    "$date": "2024-10-25T06:15:26.504Z"
+  },
+  "DriverId": "6704e2d5fc13ae4c7c4fd003",
+  "BusId": "6704e2d5fc13ae4c7c4fde08",
+  "Price": "161356",
+  "Seats": [
+    {
+      "SeatNumber": "S1",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a0b89b4fc44e8df557969643"
+      }
+    },
+    {
+      "SeatNumber": "S2",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d9a2c599559687b3c1a50feb"
+      }
+    },
+    {
+      "SeatNumber": "S3",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "b7b0c50f72a00bcbfca5a3a0"
+      }
+    },
+    {
+      "SeatNumber": "S4",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "94444fd475a6e50e92180297"
+      }
+    },
+    {
+      "SeatNumber": "S5",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7254434999fb2148a76fb464"
+      }
+    },
+    {
+      "SeatNumber": "S6",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "0e950e35d6da868bdb594241"
+      }
+    },
+    {
+      "SeatNumber": "S7",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "db934d6c41c818ec5781ab8d"
+      }
+    },
+    {
+      "SeatNumber": "S8",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "369faaeff9bf204fd673f034"
+      }
+    },
+    {
+      "SeatNumber": "S9",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "e0fa22e665acf7252a7d1f35"
+      }
+    },
+    {
+      "SeatNumber": "S10",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "3f8bcef98ab8cd498b331e1d"
+      }
+    },
+    {
+      "SeatNumber": "S11",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fb552b401e9861a799045068"
+      }
+    },
+    {
+      "SeatNumber": "S12",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "987b61d7feca9ef845675164"
+      }
+    },
+    {
+      "SeatNumber": "S13",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "2a10e39b2e3e04f4563a833d"
+      }
+    },
+    {
+      "SeatNumber": "S14",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "af578e1166ec828efac61f25"
+      }
+    },
+    {
+      "SeatNumber": "S15",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d8efae134766109527e25119"
+      }
+    },
+    {
+      "SeatNumber": "S16",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "922510670e6f5f42e3b2f85a"
+      }
+    },
+    {
+      "SeatNumber": "S17",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "c71c644ce38546ac1acbeb1b"
+      }
+    },
+    {
+      "SeatNumber": "S18",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "454d8802fd2b758951bf65fb"
+      }
+    },
+    {
+      "SeatNumber": "S19",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "af928abe1a3728b2eb0b101a"
+      }
+    },
+    {
+      "SeatNumber": "S20",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "51e79e746d4f9cf8064a68eb"
+      }
+    },
+    {
+      "SeatNumber": "S21",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a828632fd7245c8295b31811"
+      }
+    },
+    {
+      "SeatNumber": "S22",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "d3132e62478097213c265d02"
+      }
+    },
+    {
+      "SeatNumber": "S23",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "de2752ab78ce6a9760b3123b"
+      }
+    },
+    {
+      "SeatNumber": "S24",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "07221c783942e95f475cad95"
+      }
+    },
+    {
+      "SeatNumber": "S25",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "95f7c83f7253391b65833690"
+      }
+    },
+    {
+      "SeatNumber": "S26",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "a92df3f03bc987ffa5a3dd32"
+      }
+    },
+    {
+      "SeatNumber": "S27",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "370fb761998ec500c19b5adb"
+      }
+    },
+    {
+      "SeatNumber": "S28",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "961506f4e3f5d909ac7191e8"
+      }
+    },
+    {
+      "SeatNumber": "S29",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "4001b3b5ad7b4b2c53fb5f60"
+      }
+    },
+    {
+      "SeatNumber": "S30",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "1d42ab44153c415af89e893c"
+      }
+    },
+    {
+      "SeatNumber": "S31",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "9a2157a7438c170c609c7ea5"
+      }
+    },
+    {
+      "SeatNumber": "S32",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "893a7ab53212d337c97d5ef1"
+      }
+    },
+    {
+      "SeatNumber": "S33",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "7a9e4f9aeb3b382c6d2f0fac"
+      }
+    },
+    {
+      "SeatNumber": "S34",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "ac950d9177113fbc4b5edd77"
+      }
+    },
+    {
+      "SeatNumber": "S35",
+      "IsBooked": false,
+      "_id": {
+        "$oid": "fa2bcbaa9d1ac9def33ba6f7"
+      }
+    }
+  ],
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.504Z"
+  }
+}]
