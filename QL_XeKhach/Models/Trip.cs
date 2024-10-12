@@ -18,15 +18,21 @@ namespace QL_XeKhach.Models
         public string TripCode { get; set; }
 
         // Điểm khởi hành và điểm đến
-        public string DepartureLocation { get; set; }
-        public string Destination { get; set; }
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string DepartureLocationId { get; set; }
+
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string DestinationId { get; set; }
 
         // Thời gian khởi hành và dự kiến kết thúc
         public DateTime DepartureTime { get; set; }
         public DateTime EstimatedArrivalTime { get; set; }
 
         // Liên kết đến tài xế và xe được sử dụng
+        [BsonRepresentation(BsonType.ObjectId)]
         public string DriverId { get; set; }
+
+        [BsonRepresentation(BsonType.ObjectId)]
         public string BusId { get; set; }
 
         // Giá chuyến xe

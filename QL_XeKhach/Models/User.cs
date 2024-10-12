@@ -28,6 +28,7 @@ namespace QL_XeKhach.Models
         [BsonRepresentation(BsonType.String)]
         public E_Role Role { get; set; }
 
+        [BsonRepresentation(BsonType.ObjectId)]
         public string BusCompanyId { get; set; }
 
         [BsonElement("created_at")]

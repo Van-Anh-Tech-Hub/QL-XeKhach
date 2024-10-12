@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace QL_XeKhach.Services
 {
+    // Service thêm dữ liệu mẫu
     public class DataSeederService
     {
         private readonly TripService _tripService;

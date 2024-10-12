@@ -3,16 +3,24 @@
     "$oid": "33d6df818db70f4baec035ae"
   },
   "TripCode": "5HN4883DCC11",
-  "DepartureLocation": "670a0c0770b36a6c756dae13",
-  "Destination": "670a0c0770b36a6c756dadf9",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
   "DepartureTime": {
     "$date": "2024-10-31T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-31T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd006",
-  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd006"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde00"
+  },
   "Price": "166524",
   "Seats": [
     {
@@ -343,16 +351,24 @@
     "$oid": "bd94ad19dd2f08dc8b4f3c41"
   },
   "TripCode": "5HN4883DCC12",
-  "DepartureLocation": "670a0c0770b36a6c756dae13",
-  "Destination": "670a0c0770b36a6c756dae0e",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
   "DepartureTime": {
     "$date": "2024-10-29T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-29T04:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd006",
-  "BusId": "6704e2d5fc13ae4c7c4fde06",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd006"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde06"
+  },
   "Price": "173396",
   "Seats": [
     {
@@ -683,16 +699,24 @@
     "$oid": "d587d2e7a8a4bd69ab096840"
   },
   "TripCode": "5HN4883DCC13",
-  "DepartureLocation": "670a0c0770b36a6c756dae05",
-  "Destination": "670a0c0770b36a6c756dae06",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae05"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
   "DepartureTime": {
     "$date": "2024-10-31T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-31T04:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd004",
-  "BusId": "6704e2d5fc13ae4c7c4fde08",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd004"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde08"
+  },
   "Price": "175536",
   "Seats": [
     {
@@ -953,16 +977,24 @@
     "$oid": "261a7de1b1280a375547ef4b"
   },
   "TripCode": "5HN4883DCC14",
-  "DepartureLocation": "670a0c0770b36a6c756dadf6",
-  "Destination": "670a0c0770b36a6c756dae05",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae05"
+  },
   "DepartureTime": {
     "$date": "2024-10-20T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-20T05:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd008",
-  "BusId": "6704e2d5fc13ae4c7c4fde09",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd008"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde09"
+  },
   "Price": "157605",
   "Seats": [
     {
@@ -1293,16 +1325,24 @@
     "$oid": "0490bfc342764601141ba6c7"
   },
   "TripCode": "5HN4883DCC15",
-  "DepartureLocation": "670a0c0770b36a6c756dae06",
-  "Destination": "670a0c0770b36a6c756dadf6",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
   "DepartureTime": {
     "$date": "2024-10-09T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-09T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd005",
-  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd005"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde00"
+  },
   "Price": "152875",
   "Seats": [
     {
@@ -1633,16 +1673,24 @@
     "$oid": "cdb2a6b7f4b45175f90a661d"
   },
   "TripCode": "5HN4883DCC16",
-  "DepartureLocation": "670a0c0770b36a6c756dae06",
-  "Destination": "670a0c0770b36a6c756dae07",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
   "DepartureTime": {
     "$date": "2024-10-31T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-31T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd010",
-  "BusId": "6704e2d5fc13ae4c7c4fde07",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd010"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde07"
+  },
   "Price": "144258",
   "Seats": [
     {
@@ -1868,16 +1916,24 @@
     "$oid": "56615c60fd7510186ac4f3a6"
   },
   "TripCode": "5HN4883DCC17",
-  "DepartureLocation": "670a0c0770b36a6c756dadf6",
-  "Destination": "670a0c0770b36a6c756dae05",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae05"
+  },
   "DepartureTime": {
     "$date": "2024-11-06T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-11-06T05:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd010",
-  "BusId": "6704e2d5fc13ae4c7c4fde02",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd010"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde02"
+  },
   "Price": "129641",
   "Seats": [
     {
@@ -2005,16 +2061,24 @@
     "$oid": "3e6ae7d643c2c5a418d031da"
   },
   "TripCode": "5HN4883DCC18",
-  "DepartureLocation": "670a0c0770b36a6c756dadf6",
-  "Destination": "670a0c0770b36a6c756dadf9",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
   "DepartureTime": {
     "$date": "2024-10-14T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-14T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd007",
-  "BusId": "6704e2d5fc13ae4c7c4fde01",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd007"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde01"
+  },
   "Price": "176211",
   "Seats": [
     {
@@ -2275,16 +2339,24 @@
     "$oid": "40ad300dbd73e08b6034cd99"
   },
   "TripCode": "5HN4883DCC19",
-  "DepartureLocation": "670a0c0770b36a6c756dae0e",
-  "Destination": "670a0c0770b36a6c756dae06",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
   "DepartureTime": {
     "$date": "2024-10-27T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-27T04:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd006",
-  "BusId": "6704e2d5fc13ae4c7c4fde03",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd006"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde03"
+  },
   "Price": "169582",
   "Seats": [
     {
@@ -2412,16 +2484,24 @@
     "$oid": "f7e10f05ff834ce75cce6953"
   },
   "TripCode": "5HN4883DCC20",
-  "DepartureLocation": "670a0c0770b36a6c756dadf6",
-  "Destination": "670a0c0770b36a6c756dae07",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
   "DepartureTime": {
     "$date": "2024-11-03T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-11-03T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd007",
-  "BusId": "6704e2d5fc13ae4c7c4fde04",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd007"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde04"
+  },
   "Price": "127289",
   "Seats": [
     {
@@ -2647,16 +2727,24 @@
     "$oid": "339341fa24b204463024b194"
   },
   "TripCode": "5HN4883DCC21",
-  "DepartureLocation": "670a0c0770b36a6c756dae07",
-  "Destination": "670a0c0770b36a6c756dae13",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
   "DepartureTime": {
     "$date": "2024-10-31T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-31T06:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd008",
-  "BusId": "6704e2d5fc13ae4c7c4fde03",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd008"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde03"
+  },
   "Price": "154790",
   "Seats": [
     {
@@ -2784,16 +2872,24 @@
     "$oid": "29d73c6d77d6203cb4b31b06"
   },
   "TripCode": "5HN4883DCC22",
-  "DepartureLocation": "670a0c0770b36a6c756dadf9",
-  "Destination": "670a0c0770b36a6c756dae0e",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
   "DepartureTime": {
     "$date": "2024-10-24T01:15:26.503Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-24T03:15:26.503Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd001",
-  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd001"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde05"
+  },
   "Price": "149248",
   "Seats": [
     {
@@ -3054,16 +3150,24 @@
     "$oid": "9a5dd8ddac7a120c9925257c"
   },
   "TripCode": "5HN4883DCC23",
-  "DepartureLocation": "670a0c0770b36a6c756dae0e",
-  "Destination": "670a0c0770b36a6c756dae05",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae05"
+  },
   "DepartureTime": {
     "$date": "2024-10-26T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-26T05:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd005",
-  "BusId": "6704e2d5fc13ae4c7c4fde00",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd005"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde00"
+  },
   "Price": "122148",
   "Seats": [
     {
@@ -3394,16 +3498,24 @@
     "$oid": "b66ea7bc9cb4a5d037b45620"
   },
   "TripCode": "5HN4883DCC24",
-  "DepartureLocation": "670a0c0770b36a6c756dae13",
-  "Destination": "670a0c0770b36a6c756dadf6",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
   "DepartureTime": {
     "$date": "2024-11-02T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-11-02T05:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd005",
-  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd005"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde05"
+  },
   "Price": "142490",
   "Seats": [
     {
@@ -3664,16 +3776,24 @@
     "$oid": "3f28c89d5b260c3bc8f8dcfb"
   },
   "TripCode": "5HN4883DCC25",
-  "DepartureLocation": "670a0c0770b36a6c756dae13",
-  "Destination": "670a0c0770b36a6c756dae15",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae15"
+  },
   "DepartureTime": {
     "$date": "2024-10-23T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-23T03:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd001",
-  "BusId": "6704e2d5fc13ae4c7c4fde05",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd001"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde05"
+  },
   "Price": "140365",
   "Seats": [
     {
@@ -3934,16 +4054,24 @@
     "$oid": "31bbf55e1db00710076efd5b"
   },
   "TripCode": "5HN4883DCC26",
-  "DepartureLocation": "670a0c0770b36a6c756dae0e",
-  "Destination": "670a0c0770b36a6c756dae07",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
   "DepartureTime": {
     "$date": "2024-10-09T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-09T04:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd003",
-  "BusId": "6704e2d5fc13ae4c7c4fde09",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd003"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde09"
+  },
   "Price": "170656",
   "Seats": [
     {
@@ -4274,16 +4402,24 @@
     "$oid": "2554828872459248ac6918cc"
   },
   "TripCode": "5HN4883DCC27",
-  "DepartureLocation": "670a0c0770b36a6c756dadf9",
-  "Destination": "670a0c0770b36a6c756dae06",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
   "DepartureTime": {
     "$date": "2024-10-16T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-16T03:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd003",
-  "BusId": "6704e2d5fc13ae4c7c4fde02",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd003"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde02"
+  },
   "Price": "131436",
   "Seats": [
     {
@@ -4411,16 +4547,24 @@
     "$oid": "8b8bcb37ca16089d38301077"
   },
   "TripCode": "5HN4883DCC28",
-  "DepartureLocation": "670a0c0770b36a6c756dae07",
-  "Destination": "670a0c0770b36a6c756dae06",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
   "DepartureTime": {
     "$date": "2024-10-11T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-11T03:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd004",
-  "BusId": "6704e2d5fc13ae4c7c4fde04",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd004"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde04"
+  },
   "Price": "169840",
   "Seats": [
     {
@@ -4646,16 +4790,24 @@
     "$oid": "66f041e725149ff0f6771736"
   },
   "TripCode": "5HN4883DCC29",
-  "DepartureLocation": "670a0c0770b36a6c756dae15",
-  "Destination": "670a0c0770b36a6c756dae06",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae15"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
   "DepartureTime": {
     "$date": "2024-11-05T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-11-05T06:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd009",
-  "BusId": "6704e2d5fc13ae4c7c4fde01",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd009"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde01"
+  },
   "Price": "139676",
   "Seats": [
     {
@@ -4916,16 +5068,24 @@
     "$oid": "fefb8e99079fb9a6f8b3b00c"
   },
   "TripCode": "5HN4883DCC30",
-  "DepartureLocation": "670a0c0770b36a6c756dae15",
-  "Destination": "670a0c0770b36a6c756dadf9",
+  "DepartureLocationId": {
+    "$oid": "670a0c0770b36a6c756dae15"
+  },
+  "DestinationId": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
   "DepartureTime": {
     "$date": "2024-10-25T01:15:26.504Z"
   },
   "EstimatedArrivalTime": {
     "$date": "2024-10-25T06:15:26.504Z"
   },
-  "DriverId": "6704e2d5fc13ae4c7c4fd003",
-  "BusId": "6704e2d5fc13ae4c7c4fde08",
+  "DriverId": {
+    "$oid": "6704e2d5fc13ae4c7c4fd003"
+  },
+  "BusId": {
+    "$oid": "6704e2d5fc13ae4c7c4fde08"
+  },
   "Price": "161356",
   "Seats": [
     {
