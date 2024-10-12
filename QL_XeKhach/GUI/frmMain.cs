@@ -31,17 +31,50 @@ namespace QL_XeKhach.GUI
             if (UserSession.LoggedInUser.Role == E_Role.ADMIN)
             {
                 MenuItem manageBuses = new MenuItem("Quản lý nhà xe");
-                MenuItem manageVehicles = new MenuItem("Quản lý xe");
                 mainMenu.MenuItems.Add(manageBuses);
-                mainMenu.MenuItems.Add(manageVehicles);
             }
             else if (UserSession.LoggedInUser.Role ==E_Role.TICKET_SALLER)
             {
                 MenuItem buyTicket = new MenuItem("Mua vé");
                 mainMenu.MenuItems.Add(buyTicket);
             }
+            else if (UserSession.LoggedInUser.Role == E_Role.COMPANY_EMPLOYEE)
+            {
+                MenuItem manageTrip = new MenuItem("Quản lý chuyến xe");
+                MenuItem manageBus = new MenuItem("Quản lý xe");
+                MenuItem manageEmployee = new MenuItem("Nhân viên");
+
+                manageTrip.Click += new EventHandler(ManageTrip_Click);
+                manageBus.Click += new EventHandler(ManageBus_Click);
+                manageEmployee.Click += new EventHandler(ManageEmployee_Click);
+
+
+                mainMenu.MenuItems.Add(manageTrip);
+                mainMenu.MenuItems.Add(manageBus);
+                mainMenu.MenuItems.Add(manageEmployee);
+            }
 
             this.Menu = mainMenu;
+        }
+
+        private void ManageTrip_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng Quản lý chuyến xe");
+        }
+
+        private void ManageBus_Click(object sender, EventArgs e)
+        {
+            frmManageBus frmBus = new frmManageBus();
+            frmBus.MdiParent = this;
+            frmBus.WindowState = FormWindowState.Maximized;
+            frmBus.FormBorderStyle = FormBorderStyle.None;
+            frmBus.Dock = DockStyle.Fill;
+            frmBus.Show(); 
+        }
+
+        private void ManageEmployee_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Chức năng Nhân viên");
         }
     }
 }

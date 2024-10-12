@@ -55,3 +55,4 @@ E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.frmDangNhap.resou
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmMain.resources
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\bin\Debug\BCrypt.Net-Next.dll
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\bin\Debug\BCrypt.Net-Next.xml
+E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmManageBus.resources

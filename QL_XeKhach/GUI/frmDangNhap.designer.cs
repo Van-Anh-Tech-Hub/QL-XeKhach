@@ -44,7 +44,7 @@
             this.txt_Password = new System.Windows.Forms.TextBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txt_Username = new System.Windows.Forms.TextBox();
+            this.txt_Email = new System.Windows.Forms.TextBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.closeBtn = new System.Windows.Forms.Button();
@@ -225,21 +225,21 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.txt_Username);
+            this.panel4.Controls.Add(this.txt_Email);
             this.panel4.Controls.Add(this.pictureBox3);
             this.panel4.Location = new System.Drawing.Point(0, 185);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(450, 45);
             this.panel4.TabIndex = 2;
             // 
-            // txt_Username
+            // txt_Email
             // 
-            this.txt_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Username.Location = new System.Drawing.Point(55, 8);
-            this.txt_Username.Name = "txt_Username";
-            this.txt_Username.Size = new System.Drawing.Size(370, 30);
-            this.txt_Username.TabIndex = 2;
-            this.txt_Username.Click += new System.EventHandler(this.txt_Username_Click);
+            this.txt_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Email.Location = new System.Drawing.Point(55, 8);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.Size = new System.Drawing.Size(370, 30);
+            this.txt_Email.TabIndex = 2;
+            this.txt_Email.Click += new System.EventHandler(this.txt_Username_Click);
             // 
             // pictureBox3
             // 
@@ -320,7 +320,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.TextBox txt_Password;
-        private System.Windows.Forms.TextBox txt_Username;
+        private System.Windows.Forms.TextBox txt_Email;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.LinkLabel linkLabel1;

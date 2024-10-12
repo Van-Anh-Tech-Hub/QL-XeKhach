@@ -45,7 +45,6 @@ namespace QL_XeKhach.Services
         }
 
         public async Task<BusCompany> GetCompany(
-            string id,
             Expression<Func<BusCompany, bool>> filter = null)
         {
             var query = _companies.AsQueryable();
@@ -55,7 +54,7 @@ namespace QL_XeKhach.Services
                 query = query.Where(filter);
             }
 
-            return await query.FirstOrDefaultAsync(c => c.Id == id);
+            return await query.FirstOrDefaultAsync();
         }
 
         public async Task CreateCompany(BusCompany company)
@@ -103,7 +102,7 @@ namespace QL_XeKhach.Services
 
         public async Task<Bus> GetBusFromCompany(string companyId, string licensePlate)
         {
-            var company = await GetCompany(companyId);
+            var company = await GetCompany(c=>c.Id==companyId);
             return company?.Buses.FirstOrDefault(b => b.LicensePlate == licensePlate);
         }
 

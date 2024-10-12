@@ -167,6 +167,12 @@
     <Compile Include="GUI\frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmManageBus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmManageBus.Designer.cs">
+      <DependentUpon>frmManageBus.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Models\BusCompany.cs" />
@@ -190,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmManageBus.resx">
+      <DependentUpon>frmManageBus.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -1,0 +1,756 @@
+[{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756daddf"
+  },
+  "name": "An Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade0"
+  },
+  "name": "Bà Rịa - Vũng Tàu",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade1"
+  },
+  "name": "Bạc Liêu",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade2"
+  },
+  "name": "Bắc Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade3"
+  },
+  "name": "Bắc Kạn",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade4"
+  },
+  "name": "Bắc Ninh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade5"
+  },
+  "name": "Bến Tre",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade6"
+  },
+  "name": "Bình Dương",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade7"
+  },
+  "name": "Bình Định",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade8"
+  },
+  "name": "Bình Phước",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dade9"
+  },
+  "name": "Bình Thuận",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadea"
+  },
+  "name": "Cà Mau",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadeb"
+  },
+  "name": "Cần Thơ",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadec"
+  },
+  "name": "Cao Bằng",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756daded"
+  },
+  "name": "Đà Nẵng",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadee"
+  },
+  "name": "Đắk Lắk",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadef"
+  },
+  "name": "Đắk Nông",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf0"
+  },
+  "name": "Điện Biên",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf1"
+  },
+  "name": "Đồng Nai",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf2"
+  },
+  "name": "Đồng Tháp",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf3"
+  },
+  "name": "Gia Lai",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf4"
+  },
+  "name": "Hà Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf5"
+  },
+  "name": "Hà Nam",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf6"
+  },
+  "name": "Hà Nội",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf7"
+  },
+  "name": "Hà Tĩnh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf8"
+  },
+  "name": "Hải Dương",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadf9"
+  },
+  "name": "Hải Phòng",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadfa"
+  },
+  "name": "Hậu Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadfb"
+  },
+  "name": "Hòa Bình",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadfc"
+  },
+  "name": "Hưng Yên",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadfd"
+  },
+  "name": "Khánh Hòa",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadfe"
+  },
+  "name": "Kiên Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dadff"
+  },
+  "name": "Kon Tum",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae00"
+  },
+  "name": "Lai Châu",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae01"
+  },
+  "name": "Lạng Sơn",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae02"
+  },
+  "name": "Lào Cai",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae03"
+  },
+  "name": "Lâm Đồng",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae04"
+  },
+  "name": "Long An",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae05"
+  },
+  "name": "Nam Định",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae06"
+  },
+  "name": "Nghệ An",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae07"
+  },
+  "name": "Ninh Bình",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae08"
+  },
+  "name": "Ninh Thuận",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae09"
+  },
+  "name": "Phú Thọ",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0a"
+  },
+  "name": "Phú Yên",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0b"
+  },
+  "name": "Quảng Bình",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0c"
+  },
+  "name": "Quảng Nam",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0d"
+  },
+  "name": "Quảng Ngãi",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0e"
+  },
+  "name": "Quảng Ninh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae0f"
+  },
+  "name": "Quảng Trị",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae10"
+  },
+  "name": "Sóc Trăng",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae11"
+  },
+  "name": "Sơn La",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae12"
+  },
+  "name": "Tây Ninh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae13"
+  },
+  "name": "Thái Bình",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae14"
+  },
+  "name": "Thái Nguyên",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae15"
+  },
+  "name": "Thanh Hóa",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae16"
+  },
+  "name": "Thừa Thiên Huế",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae17"
+  },
+  "name": "Tiền Giang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae18"
+  },
+  "name": "TP. Hồ Chí Minh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae19"
+  },
+  "name": "Trà Vinh",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae1a"
+  },
+  "name": "Tuyên Quang",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae1b"
+  },
+  "name": "Vĩnh Long",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae1c"
+  },
+  "name": "Vĩnh Phúc",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "670a0c0770b36a6c756dae1d"
+  },
+  "name": "Yên Bái",
+  "created_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  },
+  "updated_at": {
+    "$date": "2024-10-08T01:15:26.503Z"
+  }
+}]

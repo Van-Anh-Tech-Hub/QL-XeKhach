@@ -37,11 +37,11 @@
     "$oid": "6704d9ebc37d91d036f2d429"
   },
   "Fullname": "Phạm Văn Toàn",
-  "Email": "phamvantoan@gmail.com",
+  "Email": "vuvananh@gmail.com",
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765433",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2e428",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
@@ -92,7 +92,7 @@
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765436",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2e428",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
@@ -143,7 +143,7 @@
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765439",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2d528",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
@@ -194,7 +194,7 @@
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765442",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2d528",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
@@ -245,7 +245,7 @@
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765445",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2d528",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
@@ -296,7 +296,7 @@
   "Password": "$2a$11$4pp3USyilHp5R4rscppRqu.E2PcT7TdDIW3Az/pCrjq1apSVieOwu",
   "PhoneNumber": "098765448",
   "Role": "COMPANY_EMPLOYEE",
-  "BusCompanyId": null,
+  "BusCompanyId": "6704d9ebc37d91d036f2e428",
   "created_at": {
     "$date": "2024-10-08T07:06:19.382Z"
   },
