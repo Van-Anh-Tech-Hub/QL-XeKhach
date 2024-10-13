@@ -47,11 +47,13 @@ namespace QL_XeKhach.GUI
                 dataTable.Columns.Add("LicensePlate");
                 dataTable.Columns.Add("SeatCount");
                 dataTable.Columns.Add("created_at");
+                dataTable.Columns.Add("updated_at");
+
 
                 // Thêm dữ liệu vào DataTable
                 foreach (var bus in buses)
                 {
-                    dataTable.Rows.Add(bus.Model,bus.LicensePlate,bus.SeatCount,bus.CreatedAt);
+                    dataTable.Rows.Add(bus.Model,bus.LicensePlate,bus.SeatCount,bus.CreatedAt,bus.UpdatedAt);
                 }
 
                 dgvXe.DataSource = dataTable;
@@ -61,6 +63,7 @@ namespace QL_XeKhach.GUI
                 dgvXe.Columns["LicensePlate"].HeaderText = "Biển số xe";
                 dgvXe.Columns["SeatCount"].HeaderText = "Số chỗ";
                 dgvXe.Columns["created_at"].HeaderText = "Ngày thêm";
+                dgvXe.Columns["updated_at"].HeaderText = "Ngày cập nhật";
             }
             else
             {
@@ -81,11 +84,11 @@ namespace QL_XeKhach.GUI
                 dataTable.Columns.Add("Email");
                 dataTable.Columns.Add("YearsOfExperience");
                 dataTable.Columns.Add("created_at");
+                dataTable.Columns.Add("updated_at");
 
-                // Thêm dữ liệu vào DataTable
                 foreach (var driver in drivers)
                 {
-                    dataTable.Rows.Add(driver.Name,driver.Position,driver.PhoneNumber,driver.Email,driver.YearsOfExperience,driver.CreatedAt);
+                    dataTable.Rows.Add(driver.Name,driver.Position,driver.PhoneNumber,driver.Email,driver.YearsOfExperience,driver.CreatedAt,driver.UpdatedAt);
                 }
 
                 dgvNhanVien.DataSource = dataTable;
@@ -97,6 +100,8 @@ namespace QL_XeKhach.GUI
                 dgvNhanVien.Columns["PhoneNumber"].HeaderText = "Số điện thoại";
                 dgvNhanVien.Columns["YearsOfExperience"].HeaderText = "Năm kinh nghiệm";
                 dgvNhanVien.Columns["created_at"].HeaderText = "Ngày thêm";
+                dgvNhanVien.Columns["updated_at"].HeaderText = "Ngày cập nhật";
+
             }
             else
             {

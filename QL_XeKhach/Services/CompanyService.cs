@@ -101,10 +101,10 @@ namespace QL_XeKhach.Services
             );
 
             var update = Builders<BusCompany>.Update
-                .Set(c => c.Buses[-1].Model, updatedBus.Model)
-                .Set(c => c.Buses[-1].SeatCount, updatedBus.SeatCount)
-                .Set(c => c.Buses[-1].LicensePlate, updatedBus.LicensePlate)
-                .Set(c => c.Buses[-1].UpdatedAt, DateTime.UtcNow);
+                .Set("Buses.$.Model", updatedBus.Model)
+                .Set("Buses.$.SeatCount", updatedBus.SeatCount)
+                .Set("Buses.$.LicensePlate", updatedBus.LicensePlate)
+                .Set("Buses.$.UpdatedAt", DateTime.UtcNow);
 
             await _companies.UpdateOneAsync(filter, update);
         }
@@ -171,6 +171,10 @@ namespace QL_XeKhach.Services
 
         public async Task AddDriverToCompany(string companyId, Driver driver)
         {
+            if (string.IsNullOrEmpty(driver.Id))
+            {
+                driver.Id = ObjectId.GenerateNewId().ToString();
+            }
             var filter = Builders<BusCompany>.Filter.Eq(c => c.Id, companyId);
             var update = Builders<BusCompany>.Update.Push(c => c.Drivers, driver);
             await _companies.UpdateOneAsync(filter, update);
@@ -191,15 +195,16 @@ namespace QL_XeKhach.Services
             );
 
             var update = Builders<BusCompany>.Update
-                .Set(c => c.Drivers[-1].Name, updatedDriver.Name)
-                .Set(c => c.Drivers[-1].Position, updatedDriver.Position)
-                .Set(c => c.Drivers[-1].PhoneNumber, updatedDriver.PhoneNumber)
-                .Set(c => c.Drivers[-1].Email, updatedDriver.Email)
-                .Set(c => c.Drivers[-1].YearsOfExperience, updatedDriver.YearsOfExperience)
-                .Set(c => c.Drivers[-1].UpdatedAt, DateTime.UtcNow); 
+                .Set("Drivers.$.Name", updatedDriver.Name)
+                .Set("Drivers.$.Position", updatedDriver.Position)
+                .Set("Drivers.$.PhoneNumber", updatedDriver.PhoneNumber)
+                .Set("Drivers.$.Email", updatedDriver.Email)
+                .Set("Drivers.$.YearsOfExperience", updatedDriver.YearsOfExperience)
+                .Set("Drivers.$.UpdatedAt", DateTime.UtcNow);
 
             await _companies.UpdateOneAsync(filter, update);
         }
+
 
     }
 }

@@ -113,7 +113,7 @@ namespace QL_XeKhach.GUI
             ReloadDgvBus();
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
+        private async void btnSearch_Click(object sender, EventArgs e)
         {
             string id = txtId_Search.Text.Trim();
             string model = txtModel_Search.Text.Trim();
@@ -133,7 +133,8 @@ namespace QL_XeKhach.GUI
                 (string.IsNullOrEmpty(licensePlate) || bus.LicensePlate.Contains(licensePlate)) &&
                 (!seatCount.HasValue || bus.SeatCount == seatCount.Value);
 
-            ReloadDgvBus();
+            List<Bus> buses = await companyService.GetBusesFromCompany(UserSession.LoggedInUser.BusCompanyId,filter);
+            LoadDgvBus(buses);
         }
 
         private async void btnThem_Click(object sender, EventArgs e)

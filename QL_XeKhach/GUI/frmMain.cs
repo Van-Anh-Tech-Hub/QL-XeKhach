@@ -89,7 +89,12 @@ namespace QL_XeKhach.GUI
 
         private void ManageEmployee_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng Nhân viên");
+            frmManageDriver frmDriver = new frmManageDriver();
+            frmDriver.MdiParent = this;
+            frmDriver.WindowState = FormWindowState.Maximized;
+            frmDriver.FormBorderStyle = FormBorderStyle.None;
+            frmDriver.Dock = DockStyle.Fill;
+            frmDriver.Show();
         }
     }
 }

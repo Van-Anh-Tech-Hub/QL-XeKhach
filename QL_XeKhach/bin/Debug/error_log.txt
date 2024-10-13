@@ -60,3 +60,47 @@
    at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
    at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 50
 
+[10/14/2024 00:16:21] Error: Expression not supported: c.Drivers.get_Item(-1) because negative indexes are not valid. To use the positional operator $ use FirstMatchingElement instead of an index value of -1.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ArrayIndexExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression, Expression fieldExpression, Expression indexExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.GetItemMethodToFilterFieldTranslator.Translate(TranslationContext context, Expression expression, MethodInfo method, Expression fieldExpression, ReadOnlyCollection`1 arguments)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.GetItemMethodToFilterFieldTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.MethodCallExpressionToFilterFieldTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.MemberExpressionToFilterFieldTranslator.Translate(TranslationContext context, MemberExpression memberExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.LinqProviderAdapterV3.TranslateExpressionToField[TDocument,TField](Expression`1 expression, IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry, Boolean allowScalarValueForArrayField)
+   at MongoDB.Driver.ExpressionFieldDefinition`2.Render(RenderArgs`1 args)
+   at MongoDB.Driver.OperatorUpdateDefinition`2.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.MongoCollectionImpl`1.ConvertWriteModelToWriteRequest(WriteModel`1 model, Int32 index)
+   at System.Linq.Enumerable.<SelectIterator>d__5`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation..ctor(CollectionNamespace collectionNamespace, IEnumerable`1 requests, MessageEncoderSettings messageEncoderSettings)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateBulkWriteOperation(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.<BulkWriteAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<UsingImplicitSessionAsync>d__116`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionBase`1.<UpdateOneAsync>d__113.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.CompanyService.<UpdateDriverInCompany>d__18.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\CompanyService.cs:line 205
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.GUI.frmManageDriver.<btnSua_Click>d__9.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmManageDriver.cs:line 198
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+
