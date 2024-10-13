@@ -43,18 +43,44 @@ namespace QL_XeKhach.GUI
                 MenuItem manageTrip = new MenuItem("Quản lý chuyến xe");
                 MenuItem manageBus = new MenuItem("Quản lý xe");
                 MenuItem manageEmployee = new MenuItem("Nhân viên");
-
+                MenuItem manageBusCompanies = new MenuItem("Quản lý nhà xe");
+                MenuItem manageStatistics = new MenuItem("Thống kê");
+                
                 manageTrip.Click += new EventHandler(ManageTrip_Click);
                 manageBus.Click += new EventHandler(ManageBus_Click);
                 manageEmployee.Click += new EventHandler(ManageEmployee_Click);
-
-
+                manageBusCompanies.Click += new EventHandler(ManageBusCompanies_Click);
+                manageStatistics.Click += new EventHandler(ManageStatistics_Click);
+         
                 mainMenu.MenuItems.Add(manageTrip);
                 mainMenu.MenuItems.Add(manageBus);
                 mainMenu.MenuItems.Add(manageEmployee);
+                mainMenu.MenuItems.Add(manageBusCompanies);
+                mainMenu.MenuItems.Add(manageStatistics);
             }
 
             this.Menu = mainMenu;
+        }
+
+        private void ManageStatistics_Click(object sender, EventArgs e)
+        {
+            frmStatistics frmSta = new frmStatistics();
+            frmSta.MdiParent = this;
+            frmSta.WindowState = FormWindowState.Maximized;
+            frmSta.FormBorderStyle = FormBorderStyle.None;
+            frmSta.Dock = DockStyle.Fill;
+            frmSta.Show();
+
+        }
+
+        private void ManageBusCompanies_Click(object sender, EventArgs e)
+        {
+            frmManageBusCompanies frmComBus = new frmManageBusCompanies();
+            frmComBus.MdiParent = this;
+            frmComBus.WindowState = FormWindowState.Maximized;
+            frmComBus.FormBorderStyle = FormBorderStyle.None;
+            frmComBus.Dock = DockStyle.Fill;
+            frmComBus.Show(); 
         }
 
         private void ManageTrip_Click(object sender, EventArgs e)

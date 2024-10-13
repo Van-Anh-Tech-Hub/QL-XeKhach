@@ -60,3 +60,11 @@
    at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
    at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 50
 
+[12/10/2024 8:06:06 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
+
+[12/10/2024 8:07:23 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
+

@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
-
 namespace QL_XeKhach.Services
 {
     public class TripService
     {
         private readonly IMongoCollection<Trip> _trips;
         private readonly MongoDbContext _dbContext;
+        private readonly IMongoCollection<Invoice> _invoices;
 
         public TripService()
         {
@@ -83,6 +83,18 @@ namespace QL_XeKhach.Services
         {
             var trip = await GetTrip(t => t.Id == tripId);
             return trip?.Seats.FirstOrDefault(s => s.SeatNumber == seatNumber);
+        }
+        public async Task<decimal> GetTotalRevenue()
+        {
+            var invoices = await _invoices.Find(_ => true).ToListAsync();
+            decimal totalRevenue = 0;
+
+            foreach (var invoice in invoices)
+            {
+                totalRevenue += invoice.Tickets.Sum(ticket => ticket.Price);
+            }
+
+            return totalRevenue;
         }
     }
 }

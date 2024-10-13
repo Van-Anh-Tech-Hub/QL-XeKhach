@@ -67,9 +67,10 @@ namespace QL_XeKhach.Services
             await _companies.ReplaceOneAsync(c => c.Id == id, updatedCompany);
         }
 
-        public async Task DeleteCompany(string id)
+        public async Task DeleteCompany(List<string> id)
         {
-            await _companies.DeleteOneAsync(c => c.Id == id);
+            var filter = Builders<BusCompany>.Filter.In(c => c.Id, id);
+            await _companies.DeleteManyAsync(filter);
         }
 
         public async Task AddBusToCompany(string companyId, Bus bus)
