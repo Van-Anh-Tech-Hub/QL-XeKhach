@@ -43,18 +43,33 @@ namespace QL_XeKhach.GUI
                 MenuItem manageTrip = new MenuItem("Quản lý chuyến xe");
                 MenuItem manageBus = new MenuItem("Quản lý xe");
                 MenuItem manageEmployee = new MenuItem("Nhân viên");
+                MenuItem busCompanyInfo = new MenuItem("Thông tin công ty");
+
 
                 manageTrip.Click += new EventHandler(ManageTrip_Click);
                 manageBus.Click += new EventHandler(ManageBus_Click);
                 manageEmployee.Click += new EventHandler(ManageEmployee_Click);
+                busCompanyInfo.Click += new EventHandler(BusCompanyInfo_Click);
 
 
                 mainMenu.MenuItems.Add(manageTrip);
                 mainMenu.MenuItems.Add(manageBus);
                 mainMenu.MenuItems.Add(manageEmployee);
+                mainMenu.MenuItems.Add(busCompanyInfo);
+
             }
 
             this.Menu = mainMenu;
+        }
+
+        private void BusCompanyInfo_Click(object sender, EventArgs e)
+        {
+            frmBusCompanyInfo frm = new frmBusCompanyInfo();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
 
         private void ManageTrip_Click(object sender, EventArgs e)

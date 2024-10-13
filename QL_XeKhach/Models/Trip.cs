@@ -53,11 +53,11 @@ namespace QL_XeKhach.Models
             UpdatedAt = DateTime.UtcNow;
         }
 
-        public Trip(string departureLocation, string destination, DateTime departureTime, DateTime estimatedArrivalTime, string driverId, string busId, decimal price, int seatCount) : this()
+        public Trip(string departureLocationId, string destinationId, DateTime departureTime, DateTime estimatedArrivalTime, string driverId, string busId, decimal price, int seatCount) : this()
         {
             TripCode = Helper.GenerateRandomCode(10);
-            DepartureLocation = departureLocation;
-            Destination = destination;
+            DepartureLocationId = departureLocationId;
+            DestinationId = destinationId;
             DepartureTime = departureTime;
             EstimatedArrivalTime = estimatedArrivalTime;
             DriverId = driverId;
