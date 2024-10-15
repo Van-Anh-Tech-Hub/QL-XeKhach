@@ -2,15 +2,9 @@
 using QL_XeKhach.Services;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Diagnostics;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Runtime.CompilerServices.RuntimeHelpers;
 
 namespace QL_XeKhach.GUI
 {
@@ -29,18 +23,21 @@ namespace QL_XeKhach.GUI
 
         }
 
-        private async void FrmManageTrip_Load(object sender, EventArgs e)
+        private void FrmManageTrip_Load(object sender, EventArgs e)
         {
-            List<Trip> trips = await tripService.GetTrips(t => t.BusCompanyId == UserSession.LoggedInUser.BusCompanyId, null, true);
-            _trips = trips;
-            LoadDgvTrip(trips);
+            GetTrips();
 
             LoadCboBus();
             LoadCboDriver();
             LoadCboDepartureLocation();
             LoadCboDestination();
         }
-
+        private async void GetTrips()
+        {
+            List<Trip> trips = await tripService.GetTrips(t => t.BusCompanyId == UserSession.LoggedInUser.BusCompanyId, null, true);
+            _trips = trips;
+            LoadDgvTrip(trips);
+        }
         private void LoadDgvTrip(List<Trip> trips)
         {
             if (UserSession.LoggedInUser.BusCompanyId != null)
@@ -144,11 +141,16 @@ namespace QL_XeKhach.GUI
         }
         private async void LoadCboDepartureLocation()
         {
-            List<Province> provinces=await provinceService.GetProvinces();
+            List<Province> provinces = await provinceService.GetProvinces();
             cboDepartureLocation.DataSource = provinces;
             cboDepartureLocation.DisplayMember = "Name";
             cboDepartureLocation.ValueMember = "Id";
             cboDepartureLocation.SelectedIndex = -1;
+
+            cboDepartureLocation_Search.DataSource = provinces;
+            cboDepartureLocation_Search.DisplayMember = "Name";
+            cboDepartureLocation_Search.ValueMember = "Id";
+            cboDepartureLocation_Search.SelectedIndex = -1;
         }
         private async void LoadCboDestination()
         {
@@ -157,6 +159,11 @@ namespace QL_XeKhach.GUI
             cboDestination.DisplayMember = "Name";
             cboDestination.ValueMember = "Id";
             cboDestination.SelectedIndex = -1;
+
+            cboDestination_Search.DataSource = provinces;
+            cboDestination_Search.DisplayMember = "Name";
+            cboDestination_Search.ValueMember = "Id";
+            cboDestination_Search.SelectedIndex = -1;
         }
 
         private void btnBusDetail_Click(object sender, EventArgs e)
@@ -237,7 +244,8 @@ namespace QL_XeKhach.GUI
                 string destinationId = dataTable.Rows[e.RowIndex]["DestinationId"].ToString();
                 string price = dataTable.Rows[e.RowIndex]["Price"].ToString();
                 string seatCount = dataTable.Rows[e.RowIndex]["SeatCount"].ToString();
-
+                string departureTime = dataTable.Rows[e.RowIndex]["DepartureTime"].ToString();
+                string estimatedArrivalTime = dataTable.Rows[e.RowIndex]["EstimatedArrivalTime"].ToString();
 
 
                 txtTripCode.Text = tripCode;
@@ -246,23 +254,108 @@ namespace QL_XeKhach.GUI
                 cboDepartureLocation.SelectedValue = departureLocationId;
                 cboDestination.SelectedValue = destinationId;
                 txtPrice.Text = price;
-                txtSeatCount.Text = seatCount;
+                cboSeatCount.SelectedItem = seatCount;
+                dtpDepartureTime.Text = departureTime;
+                dtpEstimatedArrivalTime.Text = estimatedArrivalTime;
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private async void btnThem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (string.IsNullOrEmpty(txtTripCode.Text) || cboBus.SelectedItem == null || cboDriver.SelectedItem == null)
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin chuyến xe.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
+                Trip newTrip = new Trip
+                {
+                    BusCompanyId = UserSession.LoggedInUser.BusCompanyId,
+                    DepartureLocationId = cboDepartureLocation.SelectedValue.ToString(),
+                    DestinationId = cboDestination.SelectedValue.ToString(),
+                    DepartureTime = DateTime.Parse(dtpDepartureTime.Text),
+                    EstimatedArrivalTime = DateTime.Parse(dtpEstimatedArrivalTime.Text),
+                    DriverId = ((Driver)cboDriver.SelectedItem).Id,
+                    BusId = ((Bus)cboBus.SelectedItem).Id,
+                    Price = decimal.Parse(txtPrice.Text),
+                };
+                newTrip.CreateSeats(((Bus)cboBus.SelectedItem).SeatCount);
+
+                await tripService.CreateTrip(newTrip);
+
+                MessageBox.Show("Thêm chuyến xe thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                GetTrips();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
 
+        private async void btnSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (selectedTrip == null)
+                {
+                    MessageBox.Show("Vui lòng chọn chuyến xe để sửa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                selectedTrip.TripCode = txtTripCode.Text;
+                selectedTrip.DriverId = cboDriver.SelectedValue.ToString();
+                selectedTrip.DepartureLocationId = cboBus.SelectedValue.ToString();
+                selectedTrip.DepartureLocationId = cboDepartureLocation.SelectedValue.ToString();
+                selectedTrip.DestinationId = cboDestination.SelectedValue.ToString();
+                selectedTrip.Price = decimal.Parse(txtPrice.Text);
+
+                await tripService.UpdateTrip(selectedTrip.Id, selectedTrip);
+
+                MessageBox.Show("Sửa chuyến xe thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                GetTrips();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+
+        private async void btnXoa_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (selectedTrip == null)
+                {
+                    MessageBox.Show("Vui lòng chọn chuyến xe để xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // Xác nhận xóa
+                var confirmResult = MessageBox.Show("Bạn có chắc chắn muốn xóa chuyến xe này không?", "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (confirmResult == DialogResult.Yes)
+                {
+                    // Gọi dịch vụ để xóa chuyến xe
+                    await tripService.DeleteTrip(selectedTrip.Id);
+
+                    // Thông báo thành công
+                    MessageBox.Show("Xóa chuyến xe thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Tải lại danh sách chuyến xe
+                    GetTrips();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         private void btnResetAction_Click(object sender, EventArgs e)
         {
@@ -272,7 +365,37 @@ namespace QL_XeKhach.GUI
             cboDepartureLocation.SelectedIndex = -1;
             cboDestination.SelectedIndex = -1;
             txtPrice.Text = string.Empty;
-            txtSeatCount.Text = string.Empty;
+            cboSeatCount.SelectedIndex = -1;
+        }
+
+        private async void btnSearch_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string tripCode = txtTripCodeSearch.Text.Trim();
+                string departureLocationId = cboDepartureLocation_Search.SelectedValue?.ToString();
+                string destinationId = cboDestination_Search.SelectedValue?.ToString();
+
+                List<Trip> trips = await tripService.GetTrips(t =>
+                    (string.IsNullOrEmpty(tripCode) || t.TripCode.Contains(tripCode)) &&
+                    (string.IsNullOrEmpty(departureLocationId) || t.DepartureLocationId == departureLocationId) &&
+                    (string.IsNullOrEmpty(destinationId) || t.DestinationId == destinationId), null, true);
+
+                LoadDgvTrip(trips);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtTripCodeSearch.Text = string.Empty;
+            cboDepartureLocation_Search.SelectedIndex = -1;
+            cboDestination_Search.SelectedIndex = -1;
+            GetTrips();
         }
     }
 }

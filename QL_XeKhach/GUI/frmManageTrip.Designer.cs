@@ -41,8 +41,6 @@
             this.cboDepartureLocation = new System.Windows.Forms.ComboBox();
             this.cboDriver = new System.Windows.Forms.ComboBox();
             this.cboBus = new System.Windows.Forms.ComboBox();
-            this.txtSeatCount = new System.Windows.Forms.TextBox();
-            this.txtPrice = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTripCode = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -56,9 +54,25 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnResetAction = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dtpEstimatedArrivalTime = new System.Windows.Forms.DateTimePicker();
+            this.dtpDepartureTime = new System.Windows.Forms.DateTimePicker();
+            this.txtPrice = new System.Windows.Forms.TextBox();
+            this.cboSeatCount = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnSearch = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.txtTripCodeSearch = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cboDepartureLocation_Search = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cboDestination_Search = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Trip)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -91,7 +105,7 @@
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_Trip.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dgv_Trip.Location = new System.Drawing.Point(12, 429);
+            this.dgv_Trip.Location = new System.Drawing.Point(12, 347);
             this.dgv_Trip.MultiSelect = false;
             this.dgv_Trip.Name = "dgv_Trip";
             this.dgv_Trip.ReadOnly = true;
@@ -106,13 +120,16 @@
             this.dgv_Trip.RowHeadersWidth = 51;
             this.dgv_Trip.RowTemplate.Height = 24;
             this.dgv_Trip.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Trip.Size = new System.Drawing.Size(1117, 488);
+            this.dgv_Trip.Size = new System.Drawing.Size(1117, 570);
             this.dgv_Trip.TabIndex = 8;
             this.dgv_Trip.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Trip_CellClick);
             this.dgv_Trip.SelectionChanged += new System.EventHandler(this.dgv_Trip_SelectionChanged);
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.cboSeatCount);
+            this.groupBox3.Controls.Add(this.dtpDepartureTime);
+            this.groupBox3.Controls.Add(this.dtpEstimatedArrivalTime);
             this.groupBox3.Controls.Add(this.btnBusDetail);
             this.groupBox3.Controls.Add(this.btnSeatCountDetail);
             this.groupBox3.Controls.Add(this.btnDriverDetail);
@@ -120,19 +137,20 @@
             this.groupBox3.Controls.Add(this.cboDepartureLocation);
             this.groupBox3.Controls.Add(this.cboDriver);
             this.groupBox3.Controls.Add(this.cboBus);
-            this.groupBox3.Controls.Add(this.txtSeatCount);
             this.groupBox3.Controls.Add(this.txtPrice);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.txtTripCode);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.label7);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Location = new System.Drawing.Point(1157, 374);
+            this.groupBox3.Location = new System.Drawing.Point(1157, 266);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(755, 543);
+            this.groupBox3.Size = new System.Drawing.Size(755, 651);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin chuyến";
@@ -151,7 +169,7 @@
             // btnSeatCountDetail
             // 
             this.btnSeatCountDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSeatCountDetail.Location = new System.Drawing.Point(625, 471);
+            this.btnSeatCountDetail.Location = new System.Drawing.Point(625, 598);
             this.btnSeatCountDetail.Name = "btnSeatCountDetail";
             this.btnSeatCountDetail.Size = new System.Drawing.Size(118, 41);
             this.btnSeatCountDetail.TabIndex = 3;
@@ -176,7 +194,7 @@
             this.cboDestination.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDestination.FormattingEnabled = true;
             this.cboDestination.IntegralHeight = false;
-            this.cboDestination.Location = new System.Drawing.Point(265, 321);
+            this.cboDestination.Location = new System.Drawing.Point(280, 321);
             this.cboDestination.Name = "cboDestination";
             this.cboDestination.Size = new System.Drawing.Size(333, 39);
             this.cboDestination.TabIndex = 2;
@@ -187,7 +205,7 @@
             this.cboDepartureLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDepartureLocation.FormattingEnabled = true;
             this.cboDepartureLocation.IntegralHeight = false;
-            this.cboDepartureLocation.Location = new System.Drawing.Point(265, 247);
+            this.cboDepartureLocation.Location = new System.Drawing.Point(280, 247);
             this.cboDepartureLocation.Name = "cboDepartureLocation";
             this.cboDepartureLocation.Size = new System.Drawing.Size(333, 39);
             this.cboDepartureLocation.TabIndex = 2;
@@ -198,7 +216,7 @@
             this.cboDriver.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboDriver.FormattingEnabled = true;
             this.cboDriver.IntegralHeight = false;
-            this.cboDriver.Location = new System.Drawing.Point(265, 176);
+            this.cboDriver.Location = new System.Drawing.Point(280, 176);
             this.cboDriver.Name = "cboDriver";
             this.cboDriver.Size = new System.Drawing.Size(333, 39);
             this.cboDriver.TabIndex = 2;
@@ -209,26 +227,10 @@
             this.cboBus.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboBus.FormattingEnabled = true;
             this.cboBus.IntegralHeight = false;
-            this.cboBus.Location = new System.Drawing.Point(265, 108);
+            this.cboBus.Location = new System.Drawing.Point(280, 108);
             this.cboBus.Name = "cboBus";
             this.cboBus.Size = new System.Drawing.Size(333, 39);
             this.cboBus.TabIndex = 2;
-            // 
-            // txtSeatCount
-            // 
-            this.txtSeatCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSeatCount.Location = new System.Drawing.Point(265, 471);
-            this.txtSeatCount.Name = "txtSeatCount";
-            this.txtSeatCount.Size = new System.Drawing.Size(333, 38);
-            this.txtSeatCount.TabIndex = 1;
-            // 
-            // txtPrice
-            // 
-            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPrice.Location = new System.Drawing.Point(265, 392);
-            this.txtPrice.Name = "txtPrice";
-            this.txtPrice.Size = new System.Drawing.Size(333, 38);
-            this.txtPrice.TabIndex = 1;
             // 
             // label9
             // 
@@ -243,7 +245,7 @@
             // txtTripCode
             // 
             this.txtTripCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTripCode.Location = new System.Drawing.Point(265, 37);
+            this.txtTripCode.Location = new System.Drawing.Point(280, 37);
             this.txtTripCode.Name = "txtTripCode";
             this.txtTripCode.ReadOnly = true;
             this.txtTripCode.Size = new System.Drawing.Size(333, 38);
@@ -283,7 +285,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 474);
+            this.label5.Location = new System.Drawing.Point(6, 601);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(172, 32);
             this.label5.TabIndex = 0;
@@ -303,7 +305,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 395);
+            this.label3.Location = new System.Drawing.Point(6, 533);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 32);
             this.label3.TabIndex = 0;
@@ -315,9 +317,9 @@
             this.groupBox2.Controls.Add(this.btnSua);
             this.groupBox2.Controls.Add(this.btnResetAction);
             this.groupBox2.Controls.Add(this.btnThem);
-            this.groupBox2.Location = new System.Drawing.Point(1157, 172);
+            this.groupBox2.Location = new System.Drawing.Point(1157, 86);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(778, 174);
+            this.groupBox2.Size = new System.Drawing.Size(755, 174);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hành động";
@@ -374,11 +376,174 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 393);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(271, 32);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Thời gian khởi hành:";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 460);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(195, 32);
+            this.label10.TabIndex = 0;
+            this.label10.Text = "Thời gian đến:";
+            // 
+            // dtpEstimatedArrivalTime
+            // 
+            this.dtpEstimatedArrivalTime.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEstimatedArrivalTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEstimatedArrivalTime.Location = new System.Drawing.Point(283, 391);
+            this.dtpEstimatedArrivalTime.Name = "dtpEstimatedArrivalTime";
+            this.dtpEstimatedArrivalTime.Size = new System.Drawing.Size(330, 34);
+            this.dtpEstimatedArrivalTime.TabIndex = 4;
+            // 
+            // dtpDepartureTime
+            // 
+            this.dtpDepartureTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpDepartureTime.Location = new System.Drawing.Point(283, 458);
+            this.dtpDepartureTime.Name = "dtpDepartureTime";
+            this.dtpDepartureTime.Size = new System.Drawing.Size(330, 34);
+            this.dtpDepartureTime.TabIndex = 4;
+            // 
+            // txtPrice
+            // 
+            this.txtPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrice.Location = new System.Drawing.Point(280, 530);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(333, 38);
+            this.txtPrice.TabIndex = 1;
+            // 
+            // cboSeatCount
+            // 
+            this.cboSeatCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSeatCount.FormattingEnabled = true;
+            this.cboSeatCount.Items.AddRange(new object[] {
+            "16",
+            "30",
+            "35",
+            "45"});
+            this.cboSeatCount.Location = new System.Drawing.Point(280, 598);
+            this.cboSeatCount.Name = "cboSeatCount";
+            this.cboSeatCount.Size = new System.Drawing.Size(333, 39);
+            this.cboSeatCount.TabIndex = 5;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.cboDestination_Search);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.cboDepartureLocation_Search);
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.btnSearch);
+            this.groupBox1.Controls.Add(this.btnReset);
+            this.groupBox1.Controls.Add(this.txtTripCodeSearch);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Location = new System.Drawing.Point(12, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1117, 234);
+            this.groupBox1.TabIndex = 11;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Lọc";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Image = global::QL_XeKhach.Properties.Resources.search;
+            this.btnSearch.Location = new System.Drawing.Point(752, 158);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(152, 46);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReset.Image = global::QL_XeKhach.Properties.Resources.reset;
+            this.btnReset.Location = new System.Drawing.Point(938, 160);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(152, 44);
+            this.btnReset.TabIndex = 5;
+            this.btnReset.Text = "Reset";
+            this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // txtTripCodeSearch
+            // 
+            this.txtTripCodeSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTripCodeSearch.Location = new System.Drawing.Point(267, 70);
+            this.txtTripCodeSearch.Name = "txtTripCodeSearch";
+            this.txtTripCodeSearch.Size = new System.Drawing.Size(244, 38);
+            this.txtTripCodeSearch.TabIndex = 3;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(31, 73);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(140, 32);
+            this.label14.TabIndex = 2;
+            this.label14.Text = "Trip code:";
+            // 
+            // cboDepartureLocation_Search
+            // 
+            this.cboDepartureLocation_Search.DropDownHeight = 160;
+            this.cboDepartureLocation_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDepartureLocation_Search.FormattingEnabled = true;
+            this.cboDepartureLocation_Search.IntegralHeight = false;
+            this.cboDepartureLocation_Search.Location = new System.Drawing.Point(267, 169);
+            this.cboDepartureLocation_Search.Name = "cboDepartureLocation_Search";
+            this.cboDepartureLocation_Search.Size = new System.Drawing.Size(244, 39);
+            this.cboDepartureLocation_Search.TabIndex = 7;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(31, 172);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(219, 32);
+            this.label15.TabIndex = 6;
+            this.label15.Text = "Điểm khởi hành:";
+            // 
+            // cboDestination_Search
+            // 
+            this.cboDestination_Search.DropDownHeight = 160;
+            this.cboDestination_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDestination_Search.FormattingEnabled = true;
+            this.cboDestination_Search.IntegralHeight = false;
+            this.cboDestination_Search.Location = new System.Drawing.Point(846, 70);
+            this.cboDestination_Search.Name = "cboDestination_Search";
+            this.cboDestination_Search.Size = new System.Drawing.Size(244, 39);
+            this.cboDestination_Search.TabIndex = 9;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(622, 74);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(194, 32);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Điểm kết thúc:";
+            // 
             // frmManageTrip
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 953);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgv_Trip);
@@ -390,6 +555,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,7 +568,6 @@
         private System.Windows.Forms.DataGridView dgv_Trip;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cboBus;
-        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.TextBox txtTripCode;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
@@ -412,7 +578,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox cboDestination;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtSeatCount;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnBusDetail;
         private System.Windows.Forms.Button btnSeatCountDetail;
@@ -422,5 +587,20 @@
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnResetAction;
         private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtpEstimatedArrivalTime;
+        private System.Windows.Forms.DateTimePicker dtpDepartureTime;
+        private System.Windows.Forms.TextBox txtPrice;
+        private System.Windows.Forms.ComboBox cboSeatCount;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox cboDepartureLocation_Search;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.TextBox txtTripCodeSearch;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.ComboBox cboDestination_Search;
+        private System.Windows.Forms.Label label11;
     }
 }
