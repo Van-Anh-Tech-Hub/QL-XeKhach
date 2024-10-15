@@ -36,6 +36,7 @@ namespace QL_XeKhach.GUI
             else if (UserSession.LoggedInUser.Role ==E_Role.TICKET_SALLER)
             {
                 MenuItem buyTicket = new MenuItem("Mua vé");
+                buyTicket.Click += new EventHandler(BuyTicket_Click);
                 mainMenu.MenuItems.Add(buyTicket);
             }
             else if (UserSession.LoggedInUser.Role == E_Role.COMPANY_EMPLOYEE)
@@ -68,6 +69,16 @@ namespace QL_XeKhach.GUI
             }
 
             this.Menu = mainMenu;
+        }
+
+        private void BuyTicket_Click(object sender, EventArgs e)
+        {
+            frmBanVe frm = new frmBanVe();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
 
         private void BusCompanyInfo_Click(object sender, EventArgs e)

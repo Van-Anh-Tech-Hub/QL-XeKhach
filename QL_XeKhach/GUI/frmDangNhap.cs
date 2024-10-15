@@ -53,7 +53,8 @@ namespace QL_XeKhach
                     Email = "admin@gmail.com",
                     Password = Helper.HashPassword("Admin@123"),
                     Role = E_Role.COMPANY_EMPLOYEE,
-                    BusCompanyId= "6704d9ebc37d91d036f2e428"
+                    //Role = E_Role.TICKET_SALLER,
+                    BusCompanyId = "6704d9ebc37d91d036f2e428"
                 };
 
 
