@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using System.Windows.Forms.Design;
 
 namespace QL_XeKhach.Services
 {
@@ -13,17 +14,21 @@ namespace QL_XeKhach.Services
     {
         private readonly IMongoCollection<Trip> _trips;
         private readonly MongoDbContext _dbContext;
+        private readonly CompanyService _companyService;
+        private readonly ProvinceService _provinceService;
 
         public TripService()
         {
             _dbContext = new MongoDbContext();
             _trips = _dbContext.Trips;
+            _companyService = new CompanyService();
+            _provinceService = new ProvinceService();
         }
 
-        // Lấy tất cả các chuyến xe với filter và orderBy
         public async Task<List<Trip>> GetTrips(
             Expression<Func<Trip, bool>> filter = null,
-            Func<IMongoQueryable<Trip>, IOrderedQueryable<Trip>> orderBy = null)
+            Func<IMongoQueryable<Trip>, IOrderedQueryable<Trip>> orderBy = null,
+            bool includeReferences = false)
         {
             var query = _trips.AsQueryable();
 
@@ -37,10 +42,20 @@ namespace QL_XeKhach.Services
                 query = (IMongoQueryable<Trip>)orderBy(query);
             }
 
-            return await query.ToListAsync();
+            var tripList = await query.ToListAsync();
+
+            if (includeReferences)
+            {
+                foreach (var trip in tripList)
+                {
+                    await LoadTripReferences(trip);
+                }
+            }
+
+            return tripList;
         }
 
-        public async Task<Trip> GetTrip(Expression<Func<Trip, bool>> filter = null)
+        public async Task<Trip> GetTrip(Expression<Func<Trip, bool>> filter = null, bool includeReferences = false)
         {
             var query = _trips.AsQueryable();
 
@@ -49,8 +64,25 @@ namespace QL_XeKhach.Services
                 query = query.Where(filter);
             }
 
-            return await query.FirstOrDefaultAsync();
+            var trip = await query.FirstOrDefaultAsync();
+
+            if (includeReferences && trip != null)
+            {
+                await LoadTripReferences(trip);
+            }
+
+            return trip;
         }
+
+        private async Task LoadTripReferences(Trip trip)
+        {
+            trip.BusCompany = await _companyService.GetCompany(c => c.Id == trip.BusCompanyId);
+            trip.Driver = await _companyService.GetDriverFromCompany(trip.BusCompanyId, t => t.Id == trip.DriverId);
+            trip.Bus = await _companyService.GetBusFromCompany(trip.BusCompanyId, t => t.Id == trip.BusId);
+            trip.DepartureLocation = await _provinceService.GetProvince(p => p.Id == trip.DepartureLocationId);
+            trip.Destination = await _provinceService.GetProvince(p => p.Id == trip.DestinationId);
+        }
+
 
         // Thêm một chuyến xe mới
         public async Task CreateTrip(Trip trip)

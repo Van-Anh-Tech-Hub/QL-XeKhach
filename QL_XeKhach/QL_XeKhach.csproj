@@ -185,6 +185,12 @@
     <Compile Include="GUI\frmManageDriver.Designer.cs">
       <DependentUpon>frmManageDriver.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmManageTrip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmManageTrip.Designer.cs">
+      <DependentUpon>frmManageTrip.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Models\BusCompany.cs" />
@@ -202,6 +208,7 @@
     <Compile Include="Services\DataSeederService.cs" />
     <Compile Include="Services\InvoiceService.cs" />
     <Compile Include="Services\MongoDbContext.cs" />
+    <Compile Include="Services\ProvinceService.cs" />
     <Compile Include="Services\TripService.cs" />
     <Compile Include="Services\UserService.cs" />
     <EmbeddedResource Include="GUI\frmBusCompanyInfo.resx">
@@ -218,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmManageDriver.resx">
       <DependentUpon>frmManageDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmManageTrip.resx">
+      <DependentUpon>frmManageTrip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

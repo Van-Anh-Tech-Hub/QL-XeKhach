@@ -74,7 +74,12 @@ namespace QL_XeKhach.GUI
 
         private void ManageTrip_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chức năng Quản lý chuyến xe");
+            frmManageTrip frmTrip = new frmManageTrip();
+            frmTrip.MdiParent = this;
+            frmTrip.WindowState = FormWindowState.Maximized;
+            frmTrip.FormBorderStyle = FormBorderStyle.None;
+            frmTrip.Dock = DockStyle.Fill;
+            frmTrip.Show();
         }
 
         private void ManageBus_Click(object sender, EventArgs e)

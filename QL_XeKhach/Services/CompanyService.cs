@@ -72,7 +72,60 @@ namespace QL_XeKhach.Services
         {
             await _companies.DeleteOneAsync(c => c.Id == id);
         }
+        public async Task<Bus> GetBusByIdAsync(string busId)
+        {
+            var filter = Builders<BusCompany>.Filter.ElemMatch(bc => bc.Buses, b => b.Id == busId);
 
+            var busCompany = await _companies
+                .Find(filter)
+                .FirstOrDefaultAsync();
+
+            return busCompany?.Buses.FirstOrDefault(b => b.Id == busId);
+        }
+        public async Task<BusCompany> GetBusCompanyByBusIdAsync(string busId)
+        {
+            var filter = Builders<BusCompany>.Filter.ElemMatch(
+                bc => bc.Buses, bus => bus.Id == busId);
+
+            return await _companies.Find(filter).FirstOrDefaultAsync();
+        }
+        public async Task<BusCompany> GetBusCompanyByDriverIdAsync(string driverId)
+        {
+            var filter = Builders<BusCompany>.Filter.ElemMatch(
+                bc => bc.Drivers, driver => driver.Id == driverId);
+
+            // Tìm BusCompany đầu tiên khớp với filter
+            return await _companies.Find(filter).FirstOrDefaultAsync();
+        }
+        public async Task<Bus> GetBusFromCompany(
+            string companyId,
+            Expression<Func<Bus, bool>> filter = null)
+        {
+            var company = await GetCompany(c => c.Id == companyId);
+            var query = company?.Buses.AsQueryable();
+
+            if (filter != null)
+            {
+                return query?.FirstOrDefault(filter);
+            }
+
+            return query?.FirstOrDefault();
+        }
+
+        public async Task<List<Bus>> GetBusesFromCompany(
+            string companyId,
+            Expression<Func<Bus, bool>> filter = null)
+        {
+            var company = await GetCompany(c => c.Id == companyId);
+            var query = company?.Buses.AsQueryable();
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            return query?.ToList() ?? new List<Bus>();
+        }
         public async Task AddBusToCompany(string companyId, Bus bus)
         {
             if (string.IsNullOrEmpty(bus.Id))
@@ -109,36 +162,6 @@ namespace QL_XeKhach.Services
             await _companies.UpdateOneAsync(filter, update);
         }
 
-
-        public async Task<Bus> GetBusFromCompany(
-            string companyId,
-            Expression<Func<Bus, bool>> filter = null)
-        {
-            var company = await GetCompany(c => c.Id == companyId);
-            var query = company?.Buses.AsQueryable();
-
-            if (filter != null)
-            {
-                return query?.FirstOrDefault(filter);
-            }
-
-            return query?.FirstOrDefault();
-        }
-
-        public async Task<List<Bus>> GetBusesFromCompany(
-            string companyId,
-            Expression<Func<Bus, bool>> filter = null)
-        {
-            var company = await GetCompany(c => c.Id == companyId);
-            var query = company?.Buses.AsQueryable();
-
-            if (filter != null)
-            {
-                query = query.Where(filter);
-            }
-
-            return query?.ToList() ?? new List<Bus>();
-        }
         public async Task<Driver> GetDriverFromCompany(
             string companyId,
             Expression<Func<Driver, bool>> filter = null)

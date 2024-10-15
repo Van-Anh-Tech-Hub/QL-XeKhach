@@ -28,7 +28,9 @@ namespace QL_XeKhach.Models
         public DateTime DepartureTime { get; set; }
         public DateTime EstimatedArrivalTime { get; set; }
 
-        // Liên kết đến tài xế và xe được sử dụng
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string BusCompanyId { get; set; }
+
         [BsonRepresentation(BsonType.ObjectId)]
         public string DriverId { get; set; }
 
@@ -47,13 +49,25 @@ namespace QL_XeKhach.Models
         [BsonElement("updated_at")]
         public DateTime UpdatedAt { get; set; }
 
+        [BsonIgnore]
+        public BusCompany BusCompany { get; set; }
+
+        [BsonIgnore]
+        public Driver Driver { get; set; }
+        [BsonIgnore]
+        public Bus Bus { get; set; }
+        [BsonIgnore]
+        public Province DepartureLocation { get; set; }
+        [BsonIgnore]
+        public Province Destination { get; set; }
+
         public Trip()
         {
             CreatedAt = DateTime.UtcNow;
             UpdatedAt = DateTime.UtcNow;
         }
 
-        public Trip(string departureLocationId, string destinationId, DateTime departureTime, DateTime estimatedArrivalTime, string driverId, string busId, decimal price, int seatCount) : this()
+        public Trip(string departureLocationId, string destinationId, DateTime departureTime, DateTime estimatedArrivalTime, string driverId, string busId, decimal price) : this()
         {
             TripCode = Helper.GenerateRandomCode(10);
             DepartureLocationId = departureLocationId;
@@ -63,8 +77,10 @@ namespace QL_XeKhach.Models
             DriverId = driverId;
             BusId = busId;
             Price = price;
+        }
 
-            // Tạo danh sách ghế với trạng thái chưa đặt và đảm bảo ghế không bị trùng
+        public void CreateSeats(int seatCount)
+        {
             for (int i = 1; i <= seatCount; i++)
             {
                 string seatNumber = $"S{i}";
