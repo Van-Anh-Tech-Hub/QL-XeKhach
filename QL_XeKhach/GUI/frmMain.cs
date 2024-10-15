@@ -57,6 +57,14 @@ namespace QL_XeKhach.GUI
                 mainMenu.MenuItems.Add(manageEmployee);
                 mainMenu.MenuItems.Add(busCompanyInfo);
 
+                MenuItem manageBusCompanies = new MenuItem("Quản lý nhà xe");
+                MenuItem manageStatistics = new MenuItem("Thống kê");
+                
+                manageBusCompanies.Click += new EventHandler(ManageBusCompanies_Click);
+                manageStatistics.Click += new EventHandler(ManageStatistics_Click);
+         
+                mainMenu.MenuItems.Add(manageBusCompanies);
+                mainMenu.MenuItems.Add(manageStatistics);
             }
 
             this.Menu = mainMenu;
@@ -70,6 +78,26 @@ namespace QL_XeKhach.GUI
             frm.FormBorderStyle = FormBorderStyle.None;
             frm.Dock = DockStyle.Fill;
             frm.Show();
+        }
+        private void ManageStatistics_Click(object sender, EventArgs e)
+        {
+            frmStatistics frmSta = new frmStatistics();
+            frmSta.MdiParent = this;
+            frmSta.WindowState = FormWindowState.Maximized;
+            frmSta.FormBorderStyle = FormBorderStyle.None;
+            frmSta.Dock = DockStyle.Fill;
+            frmSta.Show();
+
+        }
+
+        private void ManageBusCompanies_Click(object sender, EventArgs e)
+        {
+            frmManageBusCompanies frmComBus = new frmManageBusCompanies();
+            frmComBus.MdiParent = this;
+            frmComBus.WindowState = FormWindowState.Maximized;
+            frmComBus.FormBorderStyle = FormBorderStyle.None;
+            frmComBus.Dock = DockStyle.Fill;
+            frmComBus.Show(); 
         }
 
         private void ManageTrip_Click(object sender, EventArgs e)

@@ -190,4 +190,11 @@
    at QL_XeKhach.GUI.frmManageTrip.<FrmManageTrip_Load>d__2.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmManageTrip.cs:line 26
 --- End of stack trace from previous location where exception was thrown ---
    at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+[12/10/2024 8:06:06 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
+
+[12/10/2024 8:07:23 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
 

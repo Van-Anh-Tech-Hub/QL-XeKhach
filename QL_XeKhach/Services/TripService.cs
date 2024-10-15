@@ -16,6 +16,7 @@ namespace QL_XeKhach.Services
         private readonly MongoDbContext _dbContext;
         private readonly CompanyService _companyService;
         private readonly ProvinceService _provinceService;
+        private readonly IMongoCollection<Invoice> _invoices;
 
         public TripService()
         {
@@ -183,5 +184,17 @@ namespace QL_XeKhach.Services
             return bus?.SeatCount ?? 0;
         }
 
+        public async Task<decimal> GetTotalRevenue()
+        {
+            var invoices = await _invoices.Find(_ => true).ToListAsync();
+            decimal totalRevenue = 0;
+
+            foreach (var invoice in invoices)
+            {
+                totalRevenue += invoice.Tickets.Sum(ticket => ticket.Price);
+            }
+
+            return totalRevenue;
+        }
     }
 }
