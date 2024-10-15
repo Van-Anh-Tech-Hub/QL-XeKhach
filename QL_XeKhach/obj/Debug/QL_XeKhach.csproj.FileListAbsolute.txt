@@ -59,3 +59,6 @@ E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmManageBus.
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmBusCompanyInfo.resources
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmManageDriver.resources
 E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmManageTrip.resources
+E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmBusDetail.resources
+E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmDriverDetail.resources
+E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmSeatDetail.resources

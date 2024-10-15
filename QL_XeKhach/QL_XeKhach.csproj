@@ -161,11 +161,23 @@
     <Compile Include="GUI\frmBusCompanyInfo.Designer.cs">
       <DependentUpon>frmBusCompanyInfo.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmBusDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmBusDetail.Designer.cs">
+      <DependentUpon>frmBusDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmDangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frmDangNhap.designer.cs">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frmDriverDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDriverDetail.Designer.cs">
+      <DependentUpon>frmDriverDetail.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frmMain.cs">
       <SubType>Form</SubType>
@@ -191,6 +203,12 @@
     <Compile Include="GUI\frmManageTrip.Designer.cs">
       <DependentUpon>frmManageTrip.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmSeatDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmSeatDetail.Designer.cs">
+      <DependentUpon>frmSeatDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helper.cs" />
     <Compile Include="Models\Bus.cs" />
     <Compile Include="Models\BusCompany.cs" />
@@ -214,8 +232,14 @@
     <EmbeddedResource Include="GUI\frmBusCompanyInfo.resx">
       <DependentUpon>frmBusCompanyInfo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmBusDetail.resx">
+      <DependentUpon>frmBusDetail.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmDangNhap.resx">
       <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDriverDetail.resx">
+      <DependentUpon>frmDriverDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
@@ -228,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmManageTrip.resx">
       <DependentUpon>frmManageTrip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmSeatDetail.resx">
+      <DependentUpon>frmSeatDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

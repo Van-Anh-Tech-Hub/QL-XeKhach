@@ -28,12 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgv_Bus = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cboSeatCount_Search = new System.Windows.Forms.ComboBox();
+            this.txtLicensePlate_Search = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtModel_Search = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtId_Search = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cboSeatCount = new System.Windows.Forms.ComboBox();
@@ -48,20 +56,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtId_Search = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtModel_Search = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtLicensePlate_Search = new System.Windows.Forms.TextBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.cboSeatCount_Search = new System.Windows.Forms.ComboBox();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnResetAction = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
-            this.btnThem = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnResetAction = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Bus)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -70,36 +70,38 @@
             // 
             // dgv_Bus
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Bus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Bus.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_Bus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_Bus.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_Bus.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Bus.Location = new System.Drawing.Point(29, 389);
             this.dgv_Bus.MultiSelect = false;
             this.dgv_Bus.Name = "dgv_Bus";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_Bus.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dgv_Bus.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_Bus.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_Bus.RowHeadersWidth = 51;
             this.dgv_Bus.RowTemplate.Height = 24;
+            this.dgv_Bus.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_Bus.Size = new System.Drawing.Size(1059, 528);
             this.dgv_Bus.TabIndex = 0;
             this.dgv_Bus.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Bus_CellClick);
@@ -133,6 +135,84 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Lọc";
+            // 
+            // cboSeatCount_Search
+            // 
+            this.cboSeatCount_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboSeatCount_Search.FormattingEnabled = true;
+            this.cboSeatCount_Search.Items.AddRange(new object[] {
+            "16",
+            "30",
+            "35",
+            "45"});
+            this.cboSeatCount_Search.Location = new System.Drawing.Point(611, 122);
+            this.cboSeatCount_Search.Name = "cboSeatCount_Search";
+            this.cboSeatCount_Search.Size = new System.Drawing.Size(238, 39);
+            this.cboSeatCount_Search.TabIndex = 4;
+            // 
+            // txtLicensePlate_Search
+            // 
+            this.txtLicensePlate_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLicensePlate_Search.Location = new System.Drawing.Point(154, 122);
+            this.txtLicensePlate_Search.Name = "txtLicensePlate_Search";
+            this.txtLicensePlate_Search.Size = new System.Drawing.Size(238, 38);
+            this.txtLicensePlate_Search.TabIndex = 3;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(22, 125);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(114, 32);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Mẫu xe:";
+            // 
+            // txtModel_Search
+            // 
+            this.txtModel_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtModel_Search.Location = new System.Drawing.Point(611, 37);
+            this.txtModel_Search.Name = "txtModel_Search";
+            this.txtModel_Search.Size = new System.Drawing.Size(238, 38);
+            this.txtModel_Search.TabIndex = 3;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(479, 125);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(110, 32);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Số chỗ:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(479, 40);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(114, 32);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Mẫu xe:";
+            // 
+            // txtId_Search
+            // 
+            this.txtId_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId_Search.Location = new System.Drawing.Point(154, 34);
+            this.txtId_Search.Name = "txtId_Search";
+            this.txtId_Search.Size = new System.Drawing.Size(238, 38);
+            this.txtId_Search.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(22, 37);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 32);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Id:";
             // 
             // groupBox2
             // 
@@ -285,83 +365,57 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mẫu xe:";
             // 
-            // txtId_Search
+            // btnXoa
             // 
-            this.txtId_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId_Search.Location = new System.Drawing.Point(154, 34);
-            this.txtId_Search.Name = "txtId_Search";
-            this.txtId_Search.Size = new System.Drawing.Size(238, 38);
-            this.txtId_Search.TabIndex = 3;
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.Image = global::QL_XeKhach.Properties.Resources.delete;
+            this.btnXoa.Location = new System.Drawing.Point(546, 40);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(152, 41);
+            this.btnXoa.TabIndex = 5;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // label8
+            // btnSua
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(22, 37);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 32);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Id:";
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.Image = global::QL_XeKhach.Properties.Resources.updated;
+            this.btnSua.Location = new System.Drawing.Point(144, 122);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(152, 41);
+            this.btnSua.TabIndex = 5;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // label9
+            // btnResetAction
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(479, 40);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(114, 32);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Mẫu xe:";
+            this.btnResetAction.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnResetAction.Image = global::QL_XeKhach.Properties.Resources.reset;
+            this.btnResetAction.Location = new System.Drawing.Point(546, 125);
+            this.btnResetAction.Name = "btnResetAction";
+            this.btnResetAction.Size = new System.Drawing.Size(152, 44);
+            this.btnResetAction.TabIndex = 5;
+            this.btnResetAction.Text = "Reset";
+            this.btnResetAction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnResetAction.UseVisualStyleBackColor = true;
+            this.btnResetAction.Click += new System.EventHandler(this.btnResetAction_Click);
             // 
-            // txtModel_Search
+            // btnThem
             // 
-            this.txtModel_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtModel_Search.Location = new System.Drawing.Point(611, 37);
-            this.txtModel_Search.Name = "txtModel_Search";
-            this.txtModel_Search.Size = new System.Drawing.Size(238, 38);
-            this.txtModel_Search.TabIndex = 3;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(22, 125);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 32);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "Mẫu xe:";
-            // 
-            // txtLicensePlate_Search
-            // 
-            this.txtLicensePlate_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLicensePlate_Search.Location = new System.Drawing.Point(154, 122);
-            this.txtLicensePlate_Search.Name = "txtLicensePlate_Search";
-            this.txtLicensePlate_Search.Size = new System.Drawing.Size(238, 38);
-            this.txtLicensePlate_Search.TabIndex = 3;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(479, 125);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(110, 32);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Số chỗ:";
-            // 
-            // cboSeatCount_Search
-            // 
-            this.cboSeatCount_Search.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboSeatCount_Search.FormattingEnabled = true;
-            this.cboSeatCount_Search.Items.AddRange(new object[] {
-            "16",
-            "30",
-            "35",
-            "45"});
-            this.cboSeatCount_Search.Location = new System.Drawing.Point(611, 122);
-            this.cboSeatCount_Search.Name = "cboSeatCount_Search";
-            this.cboSeatCount_Search.Size = new System.Drawing.Size(238, 39);
-            this.cboSeatCount_Search.TabIndex = 4;
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.Image = global::QL_XeKhach.Properties.Resources.add;
+            this.btnThem.Location = new System.Drawing.Point(144, 40);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(152, 41);
+            this.btnThem.TabIndex = 5;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // btnSearch
             // 
@@ -388,58 +442,6 @@
             this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReset.UseVisualStyleBackColor = true;
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
-            // 
-            // btnThem
-            // 
-            this.btnThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThem.Image = global::QL_XeKhach.Properties.Resources.add;
-            this.btnThem.Location = new System.Drawing.Point(144, 40);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(152, 41);
-            this.btnThem.TabIndex = 5;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnThem.UseVisualStyleBackColor = true;
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Image = global::QL_XeKhach.Properties.Resources.delete;
-            this.btnXoa.Location = new System.Drawing.Point(546, 40);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(152, 41);
-            this.btnXoa.TabIndex = 5;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // btnResetAction
-            // 
-            this.btnResetAction.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnResetAction.Image = global::QL_XeKhach.Properties.Resources.reset;
-            this.btnResetAction.Location = new System.Drawing.Point(546, 125);
-            this.btnResetAction.Name = "btnResetAction";
-            this.btnResetAction.Size = new System.Drawing.Size(152, 44);
-            this.btnResetAction.TabIndex = 5;
-            this.btnResetAction.Text = "Reset";
-            this.btnResetAction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnResetAction.UseVisualStyleBackColor = true;
-            this.btnResetAction.Click += new System.EventHandler(this.btnResetAction_Click);
-            // 
-            // btnSua
-            // 
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = global::QL_XeKhach.Properties.Resources.updated;
-            this.btnSua.Location = new System.Drawing.Point(144, 122);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(152, 41);
-            this.btnSua.TabIndex = 5;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // frmManageBus
             // 

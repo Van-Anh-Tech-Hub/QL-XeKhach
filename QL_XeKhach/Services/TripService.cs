@@ -87,12 +87,61 @@ namespace QL_XeKhach.Services
         // Thêm một chuyến xe mới
         public async Task CreateTrip(Trip trip)
         {
+            // Kiểm tra xem có xe hoặc tài xế nào đã hoạt động trong khoảng thời gian này không
+            if (await IsTimeSlotOccupied(trip.BusId, trip.DriverId, trip.DepartureTime, trip.EstimatedArrivalTime))
+            {
+                throw new InvalidOperationException("Có xe hoặc tài xế đang hoạt động trong khoảng thời gian này.");
+            }
+
+            // Thêm chuyến xe mới nếu không trùng lặp
             await _trips.InsertOneAsync(trip);
         }
+
 
         // Cập nhật thông tin chuyến xe
         public async Task UpdateTrip(string id, Trip updatedTrip)
         {
+            // Lấy thông tin chuyến xe hiện tại
+            var currentTrip = await GetTrip(t => t.Id == id);
+
+            if (currentTrip == null)
+            {
+                throw new InvalidOperationException("Chuyến đi không tồn tại.");
+            }
+
+            // Kiểm tra xem có trùng lặp về thời gian hoạt động của xe và tài xế hay không
+            if (await IsTimeSlotOccupied(updatedTrip.BusId, updatedTrip.DriverId, updatedTrip.DepartureTime, updatedTrip.EstimatedArrivalTime, id))
+            {
+                throw new InvalidOperationException("Có xe hoặc tài xế đang hoạt động trong khoảng thời gian này.");
+            }
+
+            // Kiểm tra nếu BusId thay đổi
+            if (currentTrip.BusId != updatedTrip.BusId)
+            {
+                // Lấy số lượng ghế của xe buýt mới
+                int newSeatCount = await GetSeatCountByBusId(updatedTrip.BusId);
+
+                // Nếu số ghế mới ít hơn số ghế hiện tại, cắt bớt ghế
+                if (newSeatCount < updatedTrip.Seats.Count)
+                {
+                    updatedTrip.Seats = updatedTrip.Seats.Take(newSeatCount).ToList();
+                }
+                // Nếu số ghế mới nhiều hơn, thêm ghế mới vào
+                else if (newSeatCount > updatedTrip.Seats.Count)
+                {
+                    for (int i = updatedTrip.Seats.Count + 1; i <= newSeatCount; i++)
+                    {
+                        string seatNumber = $"S{i}";
+                        if (!updatedTrip.IsSeatNumberUnique(seatNumber))
+                        {
+                            throw new ArgumentException($"Ghế {seatNumber} đã tồn tại.");
+                        }
+                        updatedTrip.Seats.Add(new Seat(seatNumber));
+                    }
+                }
+            }
+
+            // Cập nhật chuyến đi với số ghế mới
             await _trips.ReplaceOneAsync(t => t.Id == id, updatedTrip);
         }
 
@@ -116,5 +165,23 @@ namespace QL_XeKhach.Services
             var trip = await GetTrip(t => t.Id == tripId);
             return trip?.Seats.FirstOrDefault(s => s.SeatNumber == seatNumber);
         }
+        private async Task<bool> IsTimeSlotOccupied(string busId, string driverId, DateTime departureTime, DateTime estimatedArrivalTime, string tripId = null)
+        {
+            // Tìm tất cả các chuyến xe trùng lặp về tài xế hoặc xe buýt và không trùng với tripId hiện tại (nếu sửa)
+            var conflictingTrips = await _trips.Find(t =>
+                (t.BusId == busId || t.DriverId == driverId) &&
+                (t.DepartureTime < estimatedArrivalTime && t.EstimatedArrivalTime > departureTime) &&
+                (tripId == null || t.Id != tripId)  // Bỏ qua tripId hiện tại nếu đang sửa
+            ).ToListAsync();
+
+            // Nếu tồn tại chuyến xe trùng lặp thì trả về true
+            return conflictingTrips.Any();
+        }
+        public async Task<int> GetSeatCountByBusId(string busId)
+        {
+            var bus = await _companyService.GetBusFromCompany(null, b => b.Id == busId);
+            return bus?.SeatCount ?? 0;
+        }
+
     }
 }
