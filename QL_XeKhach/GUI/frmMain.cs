@@ -41,6 +41,10 @@ namespace QL_XeKhach.GUI
             }
             else if (UserSession.LoggedInUser.Role == E_Role.COMPANY_EMPLOYEE)
             {
+                MenuItem buyTicket = new MenuItem("Mua vé");
+                buyTicket.Click += new EventHandler(BuyTicket_Click);
+                mainMenu.MenuItems.Add(buyTicket);
+
                 MenuItem manageTrip = new MenuItem("Quản lý chuyến xe");
                 MenuItem manageBus = new MenuItem("Quản lý xe");
                 MenuItem manageEmployee = new MenuItem("Nhân viên");
