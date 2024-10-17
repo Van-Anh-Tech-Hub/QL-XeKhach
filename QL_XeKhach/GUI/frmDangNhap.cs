@@ -46,27 +46,15 @@ namespace QL_XeKhach
         {
             try
             {
+                User loggedInUser = await userService.GetUser(u => u.Email == txt_Email.Text);
+                bool isVerify = Helper.VerifyPassword(txt_Password.Text, loggedInUser.Password);
 
-                User loggedInUser = new User
+                if (!isVerify || loggedInUser == null)
                 {
-                    Fullname = "Vũ Văn Anh",
-                    Email = "admin@gmail.com",
-                    Password = Helper.HashPassword("Admin@123"),
-                    //Role = E_Role.COMPANY_EMPLOYEE,
-                    Role = E_Role.TICKET_SALLER,
-                    BusCompanyId = "6704d9ebc37d91d036f2e428"
-                };
-
-
-                //User loggedInUser = await userService.GetUser(u=>u.Email==txt_Email.Text);
-                //bool isVerify = Helper.VerifyPassword(txt_Password.Text, loggedInUser.Password);
-
-                //if (!isVerify || loggedInUser == null)
-                //{
-                //    MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                //    txt_Password.Text = string.Empty;
-                //    return;
-                //}
+                    MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_Password.Text = string.Empty;
+                    return;
+                }
 
 
                 UserSession.LoggedInUser = loggedInUser;

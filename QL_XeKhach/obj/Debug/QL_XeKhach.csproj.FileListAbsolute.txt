@@ -200,3 +200,4 @@ E:\Huit24-25\HK1\NoSQL\DoAn\ver2.5\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.cs
 E:\Huit24-25\HK1\NoSQL\DoAn\ver2.5\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.csproj.Up2Date
 E:\Huit24-25\HK1\NoSQL\DoAn\ver2.5\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.exe
 E:\Huit24-25\HK1\NoSQL\DoAn\ver2.5\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.pdb
+E:\Project\Personal\QL-XeKhach\QL_XeKhach\obj\Debug\QL_XeKhach.GUI.frmHoaDon.resources

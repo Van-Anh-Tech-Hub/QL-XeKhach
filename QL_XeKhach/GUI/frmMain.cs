@@ -30,8 +30,14 @@ namespace QL_XeKhach.GUI
 
             if (UserSession.LoggedInUser.Role == E_Role.ADMIN)
             {
-                MenuItem manageBuses = new MenuItem("Quản lý nhà xe");
-                mainMenu.MenuItems.Add(manageBuses);
+                MenuItem manageBusCompanies = new MenuItem("Quản lý nhà xe");
+                MenuItem manageStatistics = new MenuItem("Thống kê");
+
+                manageBusCompanies.Click += new EventHandler(ManageBusCompanies_Click);
+                manageStatistics.Click += new EventHandler(ManageStatistics_Click);
+
+                mainMenu.MenuItems.Add(manageBusCompanies);
+                //mainMenu.MenuItems.Add(manageStatistics);
             }
             else if (UserSession.LoggedInUser.Role ==E_Role.TICKET_SALLER)
             {
@@ -45,10 +51,6 @@ namespace QL_XeKhach.GUI
             }
             else if (UserSession.LoggedInUser.Role == E_Role.COMPANY_EMPLOYEE)
             {
-                MenuItem buyTicket = new MenuItem("Mua vé");
-                buyTicket.Click += new EventHandler(BuyTicket_Click);
-                mainMenu.MenuItems.Add(buyTicket);
-
                 MenuItem manageTrip = new MenuItem("Quản lý chuyến xe");
                 MenuItem manageBus = new MenuItem("Quản lý xe");
                 MenuItem manageEmployee = new MenuItem("Nhân viên");
@@ -65,15 +67,6 @@ namespace QL_XeKhach.GUI
                 mainMenu.MenuItems.Add(manageBus);
                 mainMenu.MenuItems.Add(manageEmployee);
                 mainMenu.MenuItems.Add(busCompanyInfo);
-
-                MenuItem manageBusCompanies = new MenuItem("Quản lý nhà xe");
-                MenuItem manageStatistics = new MenuItem("Thống kê");
-                
-                manageBusCompanies.Click += new EventHandler(ManageBusCompanies_Click);
-                manageStatistics.Click += new EventHandler(ManageStatistics_Click);
-         
-                mainMenu.MenuItems.Add(manageBusCompanies);
-                //mainMenu.MenuItems.Add(manageStatistics);
             }
 
             this.Menu = mainMenu;

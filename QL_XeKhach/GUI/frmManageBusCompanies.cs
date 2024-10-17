@@ -30,28 +30,20 @@ namespace QL_XeKhach.GUI
         }
 
         //Function load dữ liệu cho bảng
-        private async Task loadDataBusCompanies()
+        private async void loadDataBusCompanies()
         {
             var busCompanyService = new CompanyService(/* truyền MongoDB database context */);
 
-            if (UserSession.LoggedInUser.BusCompanyId != null)
-            {
-                List<BusCompany> companies = await busCompanyService.GetCompanies();
+            List<BusCompany> companies = await busCompanyService.GetCompanies();
 
-                if (companies != null && companies.Count > 0)
-                {
-                    dgvCombus.DataSource =  companies ;
-                    txtName.Text = $"Xin chào, {UserSession.LoggedInUser.Fullname}";
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy công ty.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+            if (companies != null && companies.Count > 0)
+            {
+                dgvCombus.DataSource = companies;
+                txtName.Text = $"Xin chào, {UserSession.LoggedInUser.Fullname}";
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                MessageBox.Show("Không tìm thấy công ty.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -73,7 +65,7 @@ namespace QL_XeKhach.GUI
                 }
                 // Gọi phương thức thông qua đối tượng _companyService
                 await _companyService.CreateCompany(com);
-                await loadDataBusCompanies();
+                loadDataBusCompanies();
                 MessageBox.Show("Công ty đã được thêm thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Clean();
             }
@@ -134,7 +126,7 @@ namespace QL_XeKhach.GUI
                         // Gọi phương thức xóa cho từng công ty
                         await _companyService.DeleteCompany(companyIdsToDelete); // Gọi phương thức xóa với danh sách
                         MessageBox.Show("Công ty đã được xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        await loadDataBusCompanies(); // Tải lại dữ liệu
+                        loadDataBusCompanies(); // Tải lại dữ liệu
                     }
                 }
                 else
@@ -169,7 +161,7 @@ namespace QL_XeKhach.GUI
                     MessageBox.Show("Thông tin công ty đã được cập nhật thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     // Tải lại dữ liệu
-                    await loadDataBusCompanies();
+                    loadDataBusCompanies();
                     Clean();
                 }
                 else
@@ -290,7 +282,7 @@ namespace QL_XeKhach.GUI
 
         private async void btnShowAll_Click(object sender, EventArgs e)
         {
-            await loadDataBusCompanies();
+            loadDataBusCompanies();
             txtSearch.Text = "";
         }
     }
