@@ -38,6 +38,10 @@ namespace QL_XeKhach.GUI
                 MenuItem buyTicket = new MenuItem("Mua vé");
                 buyTicket.Click += new EventHandler(BuyTicket_Click);
                 mainMenu.MenuItems.Add(buyTicket);
+
+                MenuItem invoice = new MenuItem("Hoá đơn mua vé");
+                invoice.Click += new EventHandler(Invoice_Click);
+                mainMenu.MenuItems.Add(invoice);
             }
             else if (UserSession.LoggedInUser.Role == E_Role.COMPANY_EMPLOYEE)
             {
@@ -73,6 +77,17 @@ namespace QL_XeKhach.GUI
             }
 
             this.Menu = mainMenu;
+        }
+
+        private void Invoice_Click(object sender, EventArgs e)
+        {
+            CloseAllChildForms();
+            frmHoaDon frm = new frmHoaDon();
+            frm.MdiParent = this;
+            frm.WindowState = FormWindowState.Maximized;
+            frm.FormBorderStyle = FormBorderStyle.None;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
         }
 
         private void BuyTicket_Click(object sender, EventArgs e)

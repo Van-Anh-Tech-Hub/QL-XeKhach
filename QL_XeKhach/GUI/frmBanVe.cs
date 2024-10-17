@@ -18,9 +18,14 @@ namespace QL_XeKhach.GUI
         private static TripService tripService = new TripService();
         private static CompanyService companyService = new CompanyService();
         private static ProvinceService provinceService = new ProvinceService();
+        private static InvoiceService invoiceService = new InvoiceService();
 
         private List<Trip> _trips;
         private Trip selectedTrip;
+        //private List<Invoice> _invoice;
+        private Invoice selectedInvoice;
+        private string selectedTripId;
+        private string idInvoiceSelected;
 
         public frmBanVe()
         {
@@ -70,6 +75,7 @@ namespace QL_XeKhach.GUI
             LoadCboDepartureLocation();
             
             loadCbTrangThai();
+            LoadInvoices();
         }
         public async Task LoadTrips()
         {
@@ -156,6 +162,7 @@ namespace QL_XeKhach.GUI
                     dgvTrips.Columns["BusModel"].HeaderText = "Kiểu xe";
                     dgvTrips.Columns["LicensePlate"].HeaderText = "Biển số";
                     dgvTrips.Columns["SeatCount"].HeaderText = "Số chỗ";
+                    dgvTrips.Columns["SeatCount"].Width = 50;
                     dgvTrips.Columns["DepartureLocation"].HeaderText = "Điểm khởi hành";
                     dgvTrips.Columns["Destination"].HeaderText = "Điểm kết thúc";
                     dgvTrips.Columns["created_at"].HeaderText = "Ngày tạo";
@@ -178,7 +185,7 @@ namespace QL_XeKhach.GUI
         {
             await LoadTrips();
         }
-        private async void cboDiemden_SelectedIndexChanged(object sender, EventArgs e)
+        private void cboDiemden_SelectedIndexChanged(object sender, EventArgs e)
         {
             //await LoadTrips();
         }
@@ -186,6 +193,7 @@ namespace QL_XeKhach.GUI
         private void btnReset_Click(object sender, EventArgs e)
         {
             ResetAllField();
+            LoadInvoices();
         }
         private void ResetAllField()
         {
@@ -277,6 +285,7 @@ namespace QL_XeKhach.GUI
 
                 DataTable dataTable = (DataTable)dgvTrips.DataSource;
 
+                string id = dataTable.Rows[e.RowIndex]["Id"].ToString();
                 string tripCode = dataTable.Rows[e.RowIndex]["TripCode"].ToString();
                 string licensePlate = dataTable.Rows[e.RowIndex]["LicensePlate"].ToString();
                 string driverName = dataTable.Rows[e.RowIndex]["DriverName"].ToString();
@@ -289,6 +298,7 @@ namespace QL_XeKhach.GUI
 
 
                 txtTripCode.Text = tripCode;
+                selectedTripId = id;
                 txtXe.Text = licensePlate;
                 txtTaiXe.Text = driverName;
                 cboDepartureLocation.SelectedValue = departureLocationId;
@@ -359,5 +369,206 @@ namespace QL_XeKhach.GUI
                 MessageBox.Show($"Có lỗi xảy ra: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            CreateInvoice();
+        }
+        private async void CreateInvoice()
+        {
+            if (string.IsNullOrEmpty(selectedTripId))
+            {
+                MessageBox.Show("Please select a trip first.");
+                return;
+            }
+
+            var invoiceService = new InvoiceService();
+            var tickets = new List<Ticket>();
+
+            // Create a new ticket with the selected TripId, SeatNumber, and Price
+            var ticket = new Ticket(selectedTripId, txtSoGhe.Text, decimal.Parse(txtPrice.Text));
+            tickets.Add(ticket);
+
+            var newInvoice = new Invoice(txtCustomerName.Text, txtCustomerPhoneNumber.Text, tickets, txtCustomerEmail.Text);
+            await invoiceService.CreateInvoice(newInvoice);
+
+            // Mark the seat as booked in the Trips collection (assuming you have a method for this)
+            //await MarkSeatAsBooked(selectedTripId, txtSoGhe.Text);
+
+            MessageBox.Show("Invoice created successfully!");
+
+        }
+        private async void LoadInvoices()
+        {
+            var invoiceService = new InvoiceService();
+            var invoices = await invoiceService.GetInvoices(orderBy: query => query.OrderByDescending(i => i.UpdatedAt));
+            LoadDgvInvoices(invoices);
+        }
+        private async void button2_Click(object sender, EventArgs e)
+        {
+            // Get the phone number entered by the user
+            var phoneNumber = txtCustomerPhoneNumber.Text.Trim();
+
+            if (!string.IsNullOrEmpty(phoneNumber))
+            {
+                // Call GetInvoices with a filter for CustomerPhoneNumber
+                var invoices = await invoiceService.GetInvoices(i => i.CustomerPhoneNumber == phoneNumber);
+
+                if (invoices != null && invoices.Any())
+                {
+                    // Load the invoices into the DataGridView
+                    LoadDgvInvoices(invoices);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy hóa đơn với số điện thoại này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập số điện thoại để tìm kiếm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+        private async void LoadDgvInvoices(List<Invoice> invoices)
+        {
+            if (UserSession.LoggedInUser.BusCompanyId != null)
+            {
+                if (invoices != null && invoices.Any())
+                {
+                    DataTable dataTable = new DataTable();
+                    dataTable.Columns.Add("Id");
+                    dataTable.Columns.Add("InvoiceCode");
+                    dataTable.Columns.Add("CustomerName");
+                    dataTable.Columns.Add("CustomerPhoneNumber");
+                    dataTable.Columns.Add("CustomerEmail");
+                    dataTable.Columns.Add("TotalAmount");
+                    dataTable.Columns.Add("CreatedAt");
+                    dataTable.Columns.Add("UpdatedAt");
+
+                    // Thêm dữ liệu vào DataTable
+                    foreach (var invoice in invoices)
+                    {
+                        dataTable.Rows.Add(
+                            invoice?.Id,
+                            invoice?.InvoiceCode,
+                            invoice?.CustomerName,
+                            invoice?.CustomerPhoneNumber,
+                            invoice?.CustomerEmail,
+                            invoice?.TotalAmount,
+                            invoice?.CreatedAt,
+                            invoice?.UpdatedAt
+                        );
+                    }
+
+                    dgvInvoices.DataSource = dataTable;
+
+                    // Định dạng các cột trong DataGridView
+                    dgvInvoices.Columns["Id"].Visible = false;
+                    dgvInvoices.Columns["InvoiceCode"].HeaderText = "Mã hóa đơn";
+                    dgvInvoices.Columns["InvoiceCode"].Width = 120;
+                    dgvInvoices.Columns["CustomerName"].HeaderText = "Tên khách hàng";
+                    dgvInvoices.Columns["CustomerName"].Width = 150;
+                    dgvInvoices.Columns["CustomerPhoneNumber"].HeaderText = "Số điện thoại";
+                    dgvInvoices.Columns["CustomerEmail"].HeaderText = "Email";
+                    dgvInvoices.Columns["CustomerEmail"].Width = 150;
+                    dgvInvoices.Columns["TotalAmount"].HeaderText = "Tổng tiền";
+                    dgvInvoices.Columns["TotalAmount"].DefaultCellStyle.Format = "N0"; // Định dạng số tiền
+                    dgvInvoices.Columns["CreatedAt"].HeaderText = "Ngày tạo";
+                    dgvInvoices.Columns["UpdatedAt"].HeaderText = "Ngày cập nhật";
+                    dgvInvoices.Columns["UpdatedAt"].Width = 120;
+                    dgvInvoices.Columns["CreatedAt"].Width = 120;
+                }
+                else
+                {
+                    dgvInvoices.DataSource = null;
+                    dgvInvoices.Rows.Clear();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+
+        private void dgvInvoices_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                // Đảm bảo dòng đang chọn được highlight
+                dgvInvoices.ClearSelection();
+                dgvInvoices.Rows[e.RowIndex].Selected = true;
+
+                // Lấy DataTable từ DataGridView
+                DataTable dataTable = (DataTable)dgvInvoices.DataSource;
+
+                // Lấy các giá trị từ hàng được chọn
+                idInvoiceSelected = dataTable.Rows[e.RowIndex]["Id"].ToString();
+                string invoiceCode = dataTable.Rows[e.RowIndex]["InvoiceCode"].ToString();
+                string customerName = dataTable.Rows[e.RowIndex]["CustomerName"].ToString();
+                string customerPhoneNumber = dataTable.Rows[e.RowIndex]["CustomerPhoneNumber"].ToString();
+                string customerEmail = dataTable.Rows[e.RowIndex]["CustomerEmail"].ToString();
+                string createdAt = dataTable.Rows[e.RowIndex]["CreatedAt"].ToString();
+                string updatedAt = dataTable.Rows[e.RowIndex]["UpdatedAt"].ToString();
+
+                // Hiển thị các giá trị trên các control tương ứng
+                txtInvoiceCode.Text = invoiceCode;
+                txtCustomerName.Text = customerName;
+                txtCustomerPhoneNumber.Text = customerPhoneNumber;
+                txtCustomerEmail.Text = customerEmail;
+                dtpCreatedAt.Text = createdAt;
+                dtpUpdatedAt.Text = updatedAt;
+
+            }
+        }
+
+        private void btnCapNhatHoaDon_Click(object sender, EventArgs e)
+        {
+            UpdateInvoice(idInvoiceSelected);
+        }
+        private async void UpdateInvoice(string invoiceId)
+        {
+            var invoiceService = new InvoiceService();
+            var invoice = await invoiceService.GetInvoice(i => i.Id == invoiceId);
+
+            if (invoice != null)
+            {
+                // Update customer information
+                invoice.CustomerName = txtCustomerName.Text;
+                invoice.CustomerPhoneNumber = txtCustomerPhoneNumber.Text;
+                invoice.CustomerEmail = txtCustomerEmail.Text;
+
+                // Logic to handle adding or updating tickets
+                var seatNumber = txtSoGhe.Text;
+                var ticketPrice = decimal.Parse(txtPrice.Text);
+                var existingTicket = invoice.Tickets.FirstOrDefault(t => t.SeatNumber == seatNumber);
+
+                if (existingTicket != null)
+                {
+                    // Case: Update existing ticket
+                    existingTicket.Price = ticketPrice;  // Update price
+                }
+                else
+                {
+                    // Case: Add a new ticket
+                    var newTicket = new Ticket(selectedTripId, seatNumber, ticketPrice);
+                    invoice.AddTicket(newTicket);  // Use the AddTicket method to add new ticket and update timestamps
+                }
+
+                // No need to manually calculate the total price, as it's done in the `TotalAmount` property.
+                //lblTotalPrice.Text = invoice.TotalAmount.ToString();  // Update the label showing the total price
+
+                // Update the invoice in the database
+                await invoiceService.UpdateInvoice(invoiceId, invoice);
+
+                MessageBox.Show("Cập nhật hoá đơn thành công!");
+                LoadInvoices();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy hoá đơn!");
+            }
+        }
+
     }
 }

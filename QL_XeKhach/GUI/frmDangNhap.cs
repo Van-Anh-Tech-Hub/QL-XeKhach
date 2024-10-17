@@ -52,8 +52,8 @@ namespace QL_XeKhach
                     Fullname = "Vũ Văn Anh",
                     Email = "admin@gmail.com",
                     Password = Helper.HashPassword("Admin@123"),
-                    Role = E_Role.COMPANY_EMPLOYEE,
-                    //Role = E_Role.TICKET_SALLER,
+                    //Role = E_Role.COMPANY_EMPLOYEE,
+                    Role = E_Role.TICKET_SALLER,
                     BusCompanyId = "6704d9ebc37d91d036f2e428"
                 };
 
