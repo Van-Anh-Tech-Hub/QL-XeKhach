@@ -198,3 +198,10 @@
    at QL_XeKhach.frmDangNhap..ctor()
    at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
 
+[10/17/2024 23:43:04] Error: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at QL_XeKhach.Helper.VerifyPassword(String password, String hashedPassword) in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Helper.cs:line 36
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 51
+

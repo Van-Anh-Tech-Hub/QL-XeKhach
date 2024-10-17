@@ -47,9 +47,16 @@ namespace QL_XeKhach
             try
             {
                 User loggedInUser = await userService.GetUser(u => u.Email == txt_Email.Text);
-                bool isVerify = Helper.VerifyPassword(txt_Password.Text, loggedInUser.Password);
 
-                if (!isVerify || loggedInUser == null)
+                if (loggedInUser == null)
+                {
+                    MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_Password.Text = string.Empty;
+                    return;
+                }
+                bool isVerify = Helper.VerifyPassword(txt_Password.Text, loggedInUser?.Password);
+
+                if (!isVerify)
                 {
                     MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txt_Password.Text = string.Empty;

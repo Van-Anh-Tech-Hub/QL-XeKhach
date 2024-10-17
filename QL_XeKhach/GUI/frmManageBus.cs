@@ -29,46 +29,38 @@ namespace QL_XeKhach.GUI
         }
         private void LoadDgvBus(List<Bus> buses)
         {
-            if (UserSession.LoggedInUser.BusCompanyId != null)
+            if (buses != null && buses.Any())
             {
-                if (buses != null && buses.Any())
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Id");
+                dataTable.Columns.Add("Model");
+                dataTable.Columns.Add("LicensePlate");
+                dataTable.Columns.Add("SeatCount");
+                dataTable.Columns.Add("created_at");
+                dataTable.Columns.Add("updated_at");
+
+
+                // Thêm dữ liệu vào DataTable
+                foreach (var bus in buses)
                 {
-                    DataTable dataTable = new DataTable();
-                    dataTable.Columns.Add("Id");
-                    dataTable.Columns.Add("Model");
-                    dataTable.Columns.Add("LicensePlate");
-                    dataTable.Columns.Add("SeatCount");
-                    dataTable.Columns.Add("created_at");
-                    dataTable.Columns.Add("updated_at");
-
-
-                    // Thêm dữ liệu vào DataTable
-                    foreach (var bus in buses)
-                    {
-                        dataTable.Rows.Add(bus.Id, bus.Model, bus.LicensePlate, bus.SeatCount, bus.CreatedAt, bus.UpdatedAt);
-                    }
-
-                    dgv_Bus.DataSource = dataTable;
-
-                    // Đặt lại tiêu đề cột
-                    dgv_Bus.Columns["Id"].Width = 150;
-                    dgv_Bus.Columns["Model"].HeaderText = "Kiểu xe";
-                    dgv_Bus.Columns["Model"].Width = 150;
-                    dgv_Bus.Columns["LicensePlate"].HeaderText = "Biển số xe";
-                    dgv_Bus.Columns["SeatCount"].HeaderText = "Số chỗ";
-                    dgv_Bus.Columns["created_at"].HeaderText = "Ngày thêm";
-                    dgv_Bus.Columns["updated_at"].HeaderText = "Ngày cập nhật";
+                    dataTable.Rows.Add(bus.Id, bus.Model, bus.LicensePlate, bus.SeatCount, bus.CreatedAt, bus.UpdatedAt);
                 }
-                else
-                {
-                    dgv_Bus.DataSource = null;
-                    dgv_Bus.Rows.Clear();
-                }
+
+                dgv_Bus.DataSource = dataTable;
+
+                // Đặt lại tiêu đề cột
+                dgv_Bus.Columns["Id"].Width = 150;
+                dgv_Bus.Columns["Model"].HeaderText = "Kiểu xe";
+                dgv_Bus.Columns["Model"].Width = 150;
+                dgv_Bus.Columns["LicensePlate"].HeaderText = "Biển số xe";
+                dgv_Bus.Columns["SeatCount"].HeaderText = "Số chỗ";
+                dgv_Bus.Columns["created_at"].HeaderText = "Ngày thêm";
+                dgv_Bus.Columns["updated_at"].HeaderText = "Ngày cập nhật";
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dgv_Bus.DataSource = null;
+                dgv_Bus.Rows.Clear();
             }
 
         }

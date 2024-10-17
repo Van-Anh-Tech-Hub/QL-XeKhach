@@ -98,86 +98,78 @@ namespace QL_XeKhach.GUI
 
         private void LoadDgvTrip(List<Trip> trips)
         {
-            if (UserSession.LoggedInUser.BusCompanyId != null)
+            if (trips != null && trips.Any())
             {
-                if (trips != null && trips.Any())
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Id");
+                dataTable.Columns.Add("TripCode");
+                dataTable.Columns.Add("DepartureLocationId");
+                dataTable.Columns.Add("DestinationId");
+                dataTable.Columns.Add("DepartureTime");
+                dataTable.Columns.Add("EstimatedArrivalTime");
+                dataTable.Columns.Add("DriverId");
+                dataTable.Columns.Add("BusId");
+                dataTable.Columns.Add("Price");
+                dataTable.Columns.Add("DriverName");
+                dataTable.Columns.Add("BusModel");
+                dataTable.Columns.Add("LicensePlate");
+                dataTable.Columns.Add("SeatCount");
+                dataTable.Columns.Add("DepartureLocation");
+                dataTable.Columns.Add("Destination");
+                dataTable.Columns.Add("created_at");
+                dataTable.Columns.Add("updated_at");
+
+
+                // Thêm dữ liệu vào DataTable
+                foreach (var trip in trips)
                 {
-                    DataTable dataTable = new DataTable();
-                    dataTable.Columns.Add("Id");
-                    dataTable.Columns.Add("TripCode");
-                    dataTable.Columns.Add("DepartureLocationId");
-                    dataTable.Columns.Add("DestinationId");
-                    dataTable.Columns.Add("DepartureTime");
-                    dataTable.Columns.Add("EstimatedArrivalTime");
-                    dataTable.Columns.Add("DriverId");
-                    dataTable.Columns.Add("BusId");
-                    dataTable.Columns.Add("Price");
-                    dataTable.Columns.Add("DriverName");
-                    dataTable.Columns.Add("BusModel");
-                    dataTable.Columns.Add("LicensePlate");
-                    dataTable.Columns.Add("SeatCount");
-                    dataTable.Columns.Add("DepartureLocation");
-                    dataTable.Columns.Add("Destination");
-                    dataTable.Columns.Add("created_at");
-                    dataTable.Columns.Add("updated_at");
-
-
-                    // Thêm dữ liệu vào DataTable
-                    foreach (var trip in trips)
-                    {
-                        dataTable.Rows.Add(
-                            trip?.Id,
-                            trip?.TripCode,
-                            trip?.DepartureLocationId,
-                            trip?.DestinationId,
-                            trip?.DepartureTime,
-                            trip?.EstimatedArrivalTime,
-                            trip?.DriverId,
-                            trip?.BusId,
-                            trip?.Price,
-                            trip?.Driver?.Name,
-                            trip?.Bus?.Model,
-                            trip?.Bus?.LicensePlate,
-                            trip?.Bus?.SeatCount,
-                            trip?.DepartureLocation?.Name,
-                            trip?.Destination?.Name,
-                            trip?.CreatedAt,
-                            trip?.UpdatedAt
-                        );
-                    }
-
-                    dgvTrips.DataSource = dataTable;
-
-                    dgvTrips.Columns["Id"].Visible = false;
-                    dgvTrips.Columns["TripCode"].HeaderText = "Mã chuyến xe";
-                    dgvTrips.Columns["TripCode"].Width = 120;
-                    dgvTrips.Columns["DepartureLocationId"].Visible = false;
-                    dgvTrips.Columns["DestinationId"].Visible = false;
-                    dgvTrips.Columns["DepartureTime"].HeaderText = "Thời gian khởi hành dự kiến";
-                    dgvTrips.Columns["EstimatedArrivalTime"].HeaderText = "Thời gian đến dự kiến";
-                    dgvTrips.Columns["DriverId"].Visible = false;
-                    dgvTrips.Columns["BusId"].Visible = false;
-                    dgvTrips.Columns["Price"].HeaderText = "Giá";
-                    dgvTrips.Columns["DriverName"].HeaderText = "Tên tài xế";
-                    dgvTrips.Columns["BusModel"].HeaderText = "Kiểu xe";
-                    dgvTrips.Columns["LicensePlate"].HeaderText = "Biển số";
-                    dgvTrips.Columns["SeatCount"].HeaderText = "Số chỗ";
-                    dgvTrips.Columns["SeatCount"].Width = 50;
-                    dgvTrips.Columns["DepartureLocation"].HeaderText = "Điểm khởi hành";
-                    dgvTrips.Columns["Destination"].HeaderText = "Điểm kết thúc";
-                    dgvTrips.Columns["created_at"].HeaderText = "Ngày tạo";
-                    dgvTrips.Columns["updated_at"].HeaderText = "Ngày cập nhật";
+                    dataTable.Rows.Add(
+                        trip?.Id,
+                        trip?.TripCode,
+                        trip?.DepartureLocationId,
+                        trip?.DestinationId,
+                        trip?.DepartureTime,
+                        trip?.EstimatedArrivalTime,
+                        trip?.DriverId,
+                        trip?.BusId,
+                        trip?.Price,
+                        trip?.Driver?.Name,
+                        trip?.Bus?.Model,
+                        trip?.Bus?.LicensePlate,
+                        trip?.Bus?.SeatCount,
+                        trip?.DepartureLocation?.Name,
+                        trip?.Destination?.Name,
+                        trip?.CreatedAt,
+                        trip?.UpdatedAt
+                    );
                 }
-                else
-                {
-                    dgvTrips.DataSource = null;
-                    dgvTrips.Rows.Clear();
-                }
+
+                dgvTrips.DataSource = dataTable;
+
+                dgvTrips.Columns["Id"].Visible = false;
+                dgvTrips.Columns["TripCode"].HeaderText = "Mã chuyến xe";
+                dgvTrips.Columns["TripCode"].Width = 120;
+                dgvTrips.Columns["DepartureLocationId"].Visible = false;
+                dgvTrips.Columns["DestinationId"].Visible = false;
+                dgvTrips.Columns["DepartureTime"].HeaderText = "Thời gian khởi hành dự kiến";
+                dgvTrips.Columns["EstimatedArrivalTime"].HeaderText = "Thời gian đến dự kiến";
+                dgvTrips.Columns["DriverId"].Visible = false;
+                dgvTrips.Columns["BusId"].Visible = false;
+                dgvTrips.Columns["Price"].HeaderText = "Giá";
+                dgvTrips.Columns["DriverName"].HeaderText = "Tên tài xế";
+                dgvTrips.Columns["BusModel"].HeaderText = "Kiểu xe";
+                dgvTrips.Columns["LicensePlate"].HeaderText = "Biển số";
+                dgvTrips.Columns["SeatCount"].HeaderText = "Số chỗ";
+                dgvTrips.Columns["SeatCount"].Width = 50;
+                dgvTrips.Columns["DepartureLocation"].HeaderText = "Điểm khởi hành";
+                dgvTrips.Columns["Destination"].HeaderText = "Điểm kết thúc";
+                dgvTrips.Columns["created_at"].HeaderText = "Ngày tạo";
+                dgvTrips.Columns["updated_at"].HeaderText = "Ngày cập nhật";
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dgvTrips.DataSource = null;
+                dgvTrips.Rows.Clear();
             }
 
         }
@@ -431,63 +423,55 @@ namespace QL_XeKhach.GUI
         }
         private async void LoadDgvInvoices(List<Invoice> invoices)
         {
-            if (UserSession.LoggedInUser.BusCompanyId != null)
+            if (invoices != null && invoices.Any())
             {
-                if (invoices != null && invoices.Any())
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Id");
+                dataTable.Columns.Add("InvoiceCode");
+                dataTable.Columns.Add("CustomerName");
+                dataTable.Columns.Add("CustomerPhoneNumber");
+                dataTable.Columns.Add("CustomerEmail");
+                dataTable.Columns.Add("TotalAmount");
+                dataTable.Columns.Add("CreatedAt");
+                dataTable.Columns.Add("UpdatedAt");
+
+                // Thêm dữ liệu vào DataTable
+                foreach (var invoice in invoices)
                 {
-                    DataTable dataTable = new DataTable();
-                    dataTable.Columns.Add("Id");
-                    dataTable.Columns.Add("InvoiceCode");
-                    dataTable.Columns.Add("CustomerName");
-                    dataTable.Columns.Add("CustomerPhoneNumber");
-                    dataTable.Columns.Add("CustomerEmail");
-                    dataTable.Columns.Add("TotalAmount");
-                    dataTable.Columns.Add("CreatedAt");
-                    dataTable.Columns.Add("UpdatedAt");
-
-                    // Thêm dữ liệu vào DataTable
-                    foreach (var invoice in invoices)
-                    {
-                        dataTable.Rows.Add(
-                            invoice?.Id,
-                            invoice?.InvoiceCode,
-                            invoice?.CustomerName,
-                            invoice?.CustomerPhoneNumber,
-                            invoice?.CustomerEmail,
-                            invoice?.TotalAmount,
-                            invoice?.CreatedAt,
-                            invoice?.UpdatedAt
-                        );
-                    }
-
-                    dgvInvoices.DataSource = dataTable;
-
-                    // Định dạng các cột trong DataGridView
-                    dgvInvoices.Columns["Id"].Visible = false;
-                    dgvInvoices.Columns["InvoiceCode"].HeaderText = "Mã hóa đơn";
-                    dgvInvoices.Columns["InvoiceCode"].Width = 120;
-                    dgvInvoices.Columns["CustomerName"].HeaderText = "Tên khách hàng";
-                    dgvInvoices.Columns["CustomerName"].Width = 150;
-                    dgvInvoices.Columns["CustomerPhoneNumber"].HeaderText = "Số điện thoại";
-                    dgvInvoices.Columns["CustomerEmail"].HeaderText = "Email";
-                    dgvInvoices.Columns["CustomerEmail"].Width = 150;
-                    dgvInvoices.Columns["TotalAmount"].HeaderText = "Tổng tiền";
-                    dgvInvoices.Columns["TotalAmount"].DefaultCellStyle.Format = "N0"; // Định dạng số tiền
-                    dgvInvoices.Columns["CreatedAt"].HeaderText = "Ngày tạo";
-                    dgvInvoices.Columns["UpdatedAt"].HeaderText = "Ngày cập nhật";
-                    dgvInvoices.Columns["UpdatedAt"].Width = 120;
-                    dgvInvoices.Columns["CreatedAt"].Width = 120;
+                    dataTable.Rows.Add(
+                        invoice?.Id,
+                        invoice?.InvoiceCode,
+                        invoice?.CustomerName,
+                        invoice?.CustomerPhoneNumber,
+                        invoice?.CustomerEmail,
+                        invoice?.TotalAmount,
+                        invoice?.CreatedAt,
+                        invoice?.UpdatedAt
+                    );
                 }
-                else
-                {
-                    dgvInvoices.DataSource = null;
-                    dgvInvoices.Rows.Clear();
-                }
+
+                dgvInvoices.DataSource = dataTable;
+
+                // Định dạng các cột trong DataGridView
+                dgvInvoices.Columns["Id"].Visible = false;
+                dgvInvoices.Columns["InvoiceCode"].HeaderText = "Mã hóa đơn";
+                dgvInvoices.Columns["InvoiceCode"].Width = 120;
+                dgvInvoices.Columns["CustomerName"].HeaderText = "Tên khách hàng";
+                dgvInvoices.Columns["CustomerName"].Width = 150;
+                dgvInvoices.Columns["CustomerPhoneNumber"].HeaderText = "Số điện thoại";
+                dgvInvoices.Columns["CustomerEmail"].HeaderText = "Email";
+                dgvInvoices.Columns["CustomerEmail"].Width = 150;
+                dgvInvoices.Columns["TotalAmount"].HeaderText = "Tổng tiền";
+                dgvInvoices.Columns["TotalAmount"].DefaultCellStyle.Format = "N0"; // Định dạng số tiền
+                dgvInvoices.Columns["CreatedAt"].HeaderText = "Ngày tạo";
+                dgvInvoices.Columns["UpdatedAt"].HeaderText = "Ngày cập nhật";
+                dgvInvoices.Columns["UpdatedAt"].Width = 120;
+                dgvInvoices.Columns["CreatedAt"].Width = 120;
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dgvInvoices.DataSource = null;
+                dgvInvoices.Rows.Clear();
             }
         }
 

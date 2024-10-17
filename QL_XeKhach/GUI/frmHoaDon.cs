@@ -44,63 +44,55 @@ namespace QL_XeKhach.GUI
 
         private async void LoadDgvInvoices(List<Invoice> invoices)
         {
-            if (UserSession.LoggedInUser.BusCompanyId != null)
+            if (invoices != null && invoices.Any())
             {
-                if (invoices != null && invoices.Any())
+                DataTable dataTable = new DataTable();
+                dataTable.Columns.Add("Id");
+                dataTable.Columns.Add("InvoiceCode");
+                dataTable.Columns.Add("CustomerName");
+                dataTable.Columns.Add("CustomerPhoneNumber");
+                dataTable.Columns.Add("CustomerEmail");
+                dataTable.Columns.Add("TotalAmount");
+                dataTable.Columns.Add("CreatedAt");
+                dataTable.Columns.Add("UpdatedAt");
+
+                // Thêm dữ liệu vào DataTable
+                foreach (var invoice in invoices)
                 {
-                    DataTable dataTable = new DataTable();
-                    dataTable.Columns.Add("Id");
-                    dataTable.Columns.Add("InvoiceCode");
-                    dataTable.Columns.Add("CustomerName");
-                    dataTable.Columns.Add("CustomerPhoneNumber");
-                    dataTable.Columns.Add("CustomerEmail");
-                    dataTable.Columns.Add("TotalAmount");
-                    dataTable.Columns.Add("CreatedAt");
-                    dataTable.Columns.Add("UpdatedAt");
-
-                    // Thêm dữ liệu vào DataTable
-                    foreach (var invoice in invoices)
-                    {
-                        dataTable.Rows.Add(
-                            invoice?.Id,
-                            invoice?.InvoiceCode,
-                            invoice?.CustomerName,
-                            invoice?.CustomerPhoneNumber,
-                            invoice?.CustomerEmail,
-                            invoice?.TotalAmount,
-                            invoice?.CreatedAt,
-                            invoice?.UpdatedAt
-                        );
-                    }
-
-                    dgvInvoices.DataSource = dataTable;
-
-                    // Định dạng các cột trong DataGridView
-                    dgvInvoices.Columns["Id"].Visible = false;
-                    dgvInvoices.Columns["InvoiceCode"].HeaderText = "Mã hóa đơn";
-                    dgvInvoices.Columns["InvoiceCode"].Width = 120;
-                    dgvInvoices.Columns["CustomerName"].HeaderText = "Tên khách hàng";
-                    dgvInvoices.Columns["CustomerName"].Width = 150;
-                    dgvInvoices.Columns["CustomerPhoneNumber"].HeaderText = "Số điện thoại";
-                    dgvInvoices.Columns["CustomerEmail"].HeaderText = "Email";
-                    dgvInvoices.Columns["CustomerEmail"].Width = 150;
-                    dgvInvoices.Columns["TotalAmount"].HeaderText = "Tổng tiền";
-                    dgvInvoices.Columns["TotalAmount"].DefaultCellStyle.Format = "N0"; // Định dạng số tiền
-                    dgvInvoices.Columns["CreatedAt"].HeaderText = "Ngày tạo";
-                    dgvInvoices.Columns["UpdatedAt"].HeaderText = "Ngày cập nhật";
-                    dgvInvoices.Columns["UpdatedAt"].Width = 120;
-                    dgvInvoices.Columns["CreatedAt"].Width = 120;
+                    dataTable.Rows.Add(
+                        invoice?.Id,
+                        invoice?.InvoiceCode,
+                        invoice?.CustomerName,
+                        invoice?.CustomerPhoneNumber,
+                        invoice?.CustomerEmail,
+                        invoice?.TotalAmount,
+                        invoice?.CreatedAt,
+                        invoice?.UpdatedAt
+                    );
                 }
-                else
-                {
-                    dgvInvoices.DataSource = null;
-                    dgvInvoices.Rows.Clear();
-                }
+
+                dgvInvoices.DataSource = dataTable;
+
+                // Định dạng các cột trong DataGridView
+                dgvInvoices.Columns["Id"].Visible = false;
+                dgvInvoices.Columns["InvoiceCode"].HeaderText = "Mã hóa đơn";
+                dgvInvoices.Columns["InvoiceCode"].Width = 120;
+                dgvInvoices.Columns["CustomerName"].HeaderText = "Tên khách hàng";
+                dgvInvoices.Columns["CustomerName"].Width = 150;
+                dgvInvoices.Columns["CustomerPhoneNumber"].HeaderText = "Số điện thoại";
+                dgvInvoices.Columns["CustomerEmail"].HeaderText = "Email";
+                dgvInvoices.Columns["CustomerEmail"].Width = 150;
+                dgvInvoices.Columns["TotalAmount"].HeaderText = "Tổng tiền";
+                dgvInvoices.Columns["TotalAmount"].DefaultCellStyle.Format = "N0"; // Định dạng số tiền
+                dgvInvoices.Columns["CreatedAt"].HeaderText = "Ngày tạo";
+                dgvInvoices.Columns["UpdatedAt"].HeaderText = "Ngày cập nhật";
+                dgvInvoices.Columns["UpdatedAt"].Width = 120;
+                dgvInvoices.Columns["CreatedAt"].Width = 120;
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                dgvInvoices.DataSource = null;
+                dgvInvoices.Rows.Clear();
             }
         }
         private void LoadTickets(List<Ticket> tickets)
