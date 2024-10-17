@@ -69,7 +69,7 @@ namespace QL_XeKhach.GUI
                 manageStatistics.Click += new EventHandler(ManageStatistics_Click);
          
                 mainMenu.MenuItems.Add(manageBusCompanies);
-                mainMenu.MenuItems.Add(manageStatistics);
+                //mainMenu.MenuItems.Add(manageStatistics);
             }
 
             this.Menu = mainMenu;
@@ -77,6 +77,7 @@ namespace QL_XeKhach.GUI
 
         private void BuyTicket_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmBanVe frm = new frmBanVe();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
@@ -87,6 +88,7 @@ namespace QL_XeKhach.GUI
 
         private void BusCompanyInfo_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmBusCompanyInfo frm = new frmBusCompanyInfo();
             frm.MdiParent = this;
             frm.WindowState = FormWindowState.Maximized;
@@ -96,6 +98,7 @@ namespace QL_XeKhach.GUI
         }
         private void ManageStatistics_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmStatistics frmSta = new frmStatistics();
             frmSta.MdiParent = this;
             frmSta.WindowState = FormWindowState.Maximized;
@@ -107,6 +110,7 @@ namespace QL_XeKhach.GUI
 
         private void ManageBusCompanies_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmManageBusCompanies frmComBus = new frmManageBusCompanies();
             frmComBus.MdiParent = this;
             frmComBus.WindowState = FormWindowState.Maximized;
@@ -117,6 +121,7 @@ namespace QL_XeKhach.GUI
 
         private void ManageTrip_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmManageTrip frmTrip = new frmManageTrip();
             frmTrip.MdiParent = this;
             frmTrip.WindowState = FormWindowState.Maximized;
@@ -127,6 +132,7 @@ namespace QL_XeKhach.GUI
 
         private void ManageBus_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmManageBus frmBus = new frmManageBus();
             frmBus.MdiParent = this;
             frmBus.WindowState = FormWindowState.Maximized;
@@ -137,6 +143,7 @@ namespace QL_XeKhach.GUI
 
         private void ManageEmployee_Click(object sender, EventArgs e)
         {
+            CloseAllChildForms();
             frmManageDriver frmDriver = new frmManageDriver();
             frmDriver.MdiParent = this;
             frmDriver.WindowState = FormWindowState.Maximized;
@@ -144,6 +151,15 @@ namespace QL_XeKhach.GUI
             frmDriver.Dock = DockStyle.Fill;
             frmDriver.Show();
         }
+        private void CloseAllChildForms()
+        {
+            foreach (Form childForm in this.MdiChildren)
+            {
+                childForm.Close();
+            }
+        }
+
     }
+
 }
 
