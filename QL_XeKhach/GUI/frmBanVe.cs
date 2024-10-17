@@ -207,6 +207,7 @@ namespace QL_XeKhach.GUI
             if (selectedTrip == null)
             {
                 MessageBox.Show("Không tìm thấy chuyến xe tương ứng.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
             ShowSeatDetails(selectedTrip.Seats);
         }
@@ -230,7 +231,7 @@ namespace QL_XeKhach.GUI
                 }
             }
         }
-        public async Task LoadSeats(string selectedTrip)
+        public async void LoadSeats(string selectedTrip)
         {
             try
             {
@@ -421,7 +422,7 @@ namespace QL_XeKhach.GUI
                 MessageBox.Show("Vui lòng nhập số điện thoại để tìm kiếm.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-        private async void LoadDgvInvoices(List<Invoice> invoices)
+        private void LoadDgvInvoices(List<Invoice> invoices)
         {
             if (invoices != null && invoices.Any())
             {
