@@ -243,34 +243,26 @@ namespace QL_XeKhach.GUI
         {
             var busCompanyService = new CompanyService();
 
-            if (UserSession.LoggedInUser.BusCompanyId != null)
+            List<BusCompany> companies;
+
+            // Nếu có từ khóa tìm kiếm, lọc danh sách công ty
+            if (!string.IsNullOrWhiteSpace(searchTerm))
             {
-                List<BusCompany> companies;
-
-                // Nếu có từ khóa tìm kiếm, lọc danh sách công ty
-                if (!string.IsNullOrWhiteSpace(searchTerm))
-                {
-                    companies = await busCompanyService.GetCompanies(c => c.CompanyName.Contains(searchTerm));
-                }
-                else
-                {
-                    // Nếu không có từ khóa, lấy tất cả công ty
-                    companies = await busCompanyService.GetCompanies();
-                }
-
-                if (companies != null && companies.Count > 0)
-                {
-                    dgvCombus.DataSource = companies;
-                }
-                else
-                {
-                    MessageBox.Show("Không tìm thấy công ty.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                companies = await busCompanyService.GetCompanies(c => c.CompanyName.Contains(searchTerm));
             }
             else
             {
-                MessageBox.Show("Tài khoản không hợp lệ!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                // Nếu không có từ khóa, lấy tất cả công ty
+                companies = await busCompanyService.GetCompanies();
+            }
+
+            if (companies != null && companies.Count > 0)
+            {
+                dgvCombus.DataSource = companies;
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy công ty.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

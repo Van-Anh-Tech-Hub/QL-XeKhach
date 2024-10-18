@@ -32,9 +32,9 @@ namespace QL_XeKhach.GUI
             InitializeComponent();
             provinceService = new ProvinceService();
             this.Load += FrmBanVe_Load;
-            
+
         }
-        
+
         public void loadCbTrangThai()
         {
             cboTrangThai.Items.Clear();
@@ -73,7 +73,7 @@ namespace QL_XeKhach.GUI
         {
             await load_CbDepartureLocation();
             LoadCboDepartureLocation();
-            
+
             loadCbTrangThai();
             LoadInvoices();
         }
@@ -84,7 +84,7 @@ namespace QL_XeKhach.GUI
 
                 var selectedProvinceId = cboDiemden.SelectedValue.ToString();
 
-                List<Trip> trips = await tripService.GetTrips(t => t.BusCompanyId == UserSession.LoggedInUser.BusCompanyId && t.DestinationId==selectedProvinceId , null, true);
+                List<Trip> trips = await tripService.GetTrips(t => t.DestinationId == selectedProvinceId, null, true);
                 if (trips == null || trips.Count == 0)
                 {
                     MessageBox.Show("No trips found for the selected destination.");
@@ -92,7 +92,7 @@ namespace QL_XeKhach.GUI
                 }
                 _trips = trips;
                 LoadDgvTrip(trips);
-                
+
             }
         }
 
@@ -197,7 +197,7 @@ namespace QL_XeKhach.GUI
             txtPrice.Text = string.Empty;
             txtSeatCount.Text = string.Empty;
             txt_tgDen.Text = string.Empty;
-            txt_tgKhoiHanh.Text = string.Empty; 
+            txt_tgKhoiHanh.Text = string.Empty;
             txtSoGhe.Text = string.Empty;
             cboTrangThai.SelectedIndex = -1;
         }
@@ -248,7 +248,7 @@ namespace QL_XeKhach.GUI
                 dataTable.Columns.Add("Id");
                 dataTable.Columns.Add("SeatNumber");
                 dataTable.Columns.Add("IsBooked", typeof(bool)); // Đảm bảo kiểu dữ liệu là boolean
-                
+
 
                 // Thêm thông tin ghế vào DataTable
                 foreach (var seat in trip.Seats)
@@ -270,7 +270,7 @@ namespace QL_XeKhach.GUI
 
         private void dgvTrips_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if(e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
             {
                 dgvTrips.ClearSelection();
                 dgvTrips.Rows[e.RowIndex].Selected = true;
@@ -302,7 +302,7 @@ namespace QL_XeKhach.GUI
                 txt_tgDen.Text = estimatedArrivalTime;
             }
         }
-      
+
         private void dgvSeats_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
