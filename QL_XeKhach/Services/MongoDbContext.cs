@@ -33,5 +33,7 @@ namespace QL_XeKhach.Services
         public IMongoCollection<BusCompany> BusCompanies => _database.GetCollection<BusCompany>("BusCompanies");
         public IMongoCollection<Trip> Trips => _database.GetCollection<Trip>("Trips");
         public IMongoCollection<Invoice> Invoices => _database.GetCollection<Invoice>("Invoices");
+        public IMongoCollection<Province> Provinces => _database.GetCollection<Province>("Provinces");
+
     }
 }

@@ -28,7 +28,7 @@ namespace QL_XeKhach
 
         private void txt_Username_Click(object sender, EventArgs e)
         {
-            txt_Username.BackColor = Color.White;
+            txt_Email.BackColor = Color.White;
             panel4.BackColor = Color.White;
             panel5.BackColor = SystemColors.Control;
             txt_Password.BackColor = SystemColors.Control;
@@ -39,26 +39,32 @@ namespace QL_XeKhach
             txt_Password.BackColor = Color.White;
             panel5.BackColor = Color.White;
             panel4.BackColor = SystemColors.Control;
-            txt_Username.BackColor = SystemColors.Control;
+            txt_Email.BackColor = SystemColors.Control;
         }
 
         private async void btn_Login_Click(object sender, EventArgs e)
         {
             try
             {
+                User loggedInUser = await userService.GetUser(u => u.Email == txt_Email.Text);
 
-                //User user = new User
-                //{
-                //    Fullname = "Vũ Văn Anh",
-                //    Email = "admin@gmail.com",
-                //    Password = Helper.HashPassword("Admin@123"),
-                //    Role = E_Role.ADMIN,
-                //};
-                //User loggedInUser = await userService.CreateUser(user);
-                //bool isVerify = Helper.VerifyPassword("Admin@123", loggedInUser.Password);
+                if (loggedInUser == null)
+                {
+                    MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_Password.Text = string.Empty;
+                    return;
+                }
+                bool isVerify = Helper.VerifyPassword(txt_Password.Text, loggedInUser?.Password);
+
+                if (!isVerify)
+                {
+                    MessageBox.Show("Email hoặc mật khẩu không đúng!!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txt_Password.Text = string.Empty;
+                    return;
+                }
 
 
-                //UserSession.LoggedInUser = loggedInUser;
+                UserSession.LoggedInUser = loggedInUser;
 
                 // Chuyển sang frmMain
                 frmMain frm = new frmMain();
@@ -73,7 +79,7 @@ namespace QL_XeKhach
 
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
-            txt_Username.Focus();
+            txt_Email.Focus();
         }
 
         private void txt_Password_KeyPress(object sender, KeyPressEventArgs e)

@@ -60,3 +60,148 @@
    at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
    at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 50
 
+[10/14/2024 00:16:21] Error: Expression not supported: c.Drivers.get_Item(-1) because negative indexes are not valid. To use the positional operator $ use FirstMatchingElement instead of an index value of -1.
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ArrayIndexExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression, Expression fieldExpression, Expression indexExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.GetItemMethodToFilterFieldTranslator.Translate(TranslationContext context, Expression expression, MethodInfo method, Expression fieldExpression, ReadOnlyCollection`1 arguments)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.GetItemMethodToFilterFieldTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.MethodCallExpressionToFilterFieldTranslator.Translate(TranslationContext context, MethodCallExpression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.MemberExpressionToFilterFieldTranslator.Translate(TranslationContext context, MemberExpression memberExpression)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToFilterTranslators.ToFilterFieldTranslators.ExpressionToFilterFieldTranslator.Translate(TranslationContext context, Expression expression)
+   at MongoDB.Driver.Linq.Linq3Implementation.LinqProviderAdapterV3.TranslateExpressionToField[TDocument,TField](Expression`1 expression, IBsonSerializer`1 documentSerializer, IBsonSerializerRegistry serializerRegistry, Boolean allowScalarValueForArrayField)
+   at MongoDB.Driver.ExpressionFieldDefinition`2.Render(RenderArgs`1 args)
+   at MongoDB.Driver.OperatorUpdateDefinition`2.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.CombinedUpdateDefinition`1.Render(RenderArgs`1 args)
+   at MongoDB.Driver.MongoCollectionImpl`1.ConvertWriteModelToWriteRequest(WriteModel`1 model, Int32 index)
+   at System.Linq.Enumerable.<SelectIterator>d__5`2.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at MongoDB.Driver.Core.Operations.BulkMixedWriteOperation..ctor(CollectionNamespace collectionNamespace, IEnumerable`1 requests, MessageEncoderSettings messageEncoderSettings)
+   at MongoDB.Driver.MongoCollectionImpl`1.CreateBulkWriteOperation(IClientSessionHandle session, IEnumerable`1 requests, BulkWriteOptions options)
+   at MongoDB.Driver.MongoCollectionImpl`1.<BulkWriteAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<UsingImplicitSessionAsync>d__116`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionBase`1.<UpdateOneAsync>d__113.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.CompanyService.<UpdateDriverInCompany>d__18.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\CompanyService.cs:line 205
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.GUI.frmManageDriver.<btnSua_Click>d__9.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmManageDriver.cs:line 198
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+
+[10/15/2024 14:10:01] Error: Object reference not set to an instance of an object.
+   at QL_XeKhach.Services.DataSeederService.<SeedData>d__6.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\DataSeederService.cs:line 50
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__6.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 71
+
+[10/15/2024 15:15:12] Error: Element 'name' does not match any field or property of class QL_XeKhach.Models.Province.
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.DeserializeClass(BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.BsonClassMapSerializer`1.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Bson.Serialization.Serializers.EnumerableSerializerBase`2.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.CursorDeserializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.AggregateResultDeserializer.Deserialize(BsonDeserializationContext context, BsonDeserializationArgs args)
+   at MongoDB.Bson.Serialization.IBsonSerializerExtensions.Deserialize[TValue](IBsonSerializer`1 serializer, BsonDeserializationContext context)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.ProcessResponse(ConnectionId connectionId, CommandMessage responseMessage)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.<SendMessageAndProcessResponseAsync>d__34.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.WireProtocol.CommandUsingCommandMessageWireProtocol`1.<ExecuteAsync>d__20.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Servers.Server.ServerChannel.<ExecuteProtocolAsync>d__20`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.RetryableReadOperationExecutor.<ExecuteAsync>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.ReadCommandOperation`1.<ExecuteAsync>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.<ExecuteAsync>d__65.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Core.Operations.AggregateOperation`1.<ExecuteAsync>d__64.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.OperationExecutor.<ExecuteReadOperationAsync>d__3`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<ExecuteReadOperationAsync>d__108`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<AggregateAsync>d__26`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.MongoCollectionImpl`1.<UsingImplicitSessionAsync>d__116`1.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at MongoDB.Driver.Linq.Linq3Implementation.Translators.ExpressionToExecutableQueryTranslators.ExecutableQuery`3.<ExecuteAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.ProvinceService.<GetProvince>d__4.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\ProvinceService.cs:line 53
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.Services.TripService.<LoadTripReferences>d__7.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\TripService.cs:line 81
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.GetResult()
+   at QL_XeKhach.Services.TripService.<GetTrips>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Services\TripService.cs:line 51
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter`1.GetResult()
+   at QL_XeKhach.GUI.frmManageTrip.<FrmManageTrip_Load>d__2.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmManageTrip.cs:line 26
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.AsyncMethodBuilderCore.<>c.<ThrowAsync>b__6_0(Object state)
+[12/10/2024 8:06:06 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
+
+[12/10/2024 8:07:23 CH] Error: The type initializer for 'QL_XeKhach.frmDangNhap' threw an exception.
+   at QL_XeKhach.frmDangNhap..ctor()
+   at QL_XeKhach.Program.Main() in D:\HK7\NoSQL\QL-XeKhach\QL_XeKhach\Program.cs:line 24
+
+[10/17/2024 23:43:04] Error: String reference not set to an instance of a String.
+Parameter name: s
+   at System.Text.Encoding.GetBytes(String s)
+   at BCrypt.Net.BCrypt.Verify(String text, String hash, Boolean enhancedEntropy, HashType hashType)
+   at QL_XeKhach.Helper.VerifyPassword(String password, String hashedPassword) in E:\Project\Personal\QL-XeKhach\QL_XeKhach\Helper.cs:line 36
+   at QL_XeKhach.frmDangNhap.<btn_Login_Click>d__5.MoveNext() in E:\Project\Personal\QL-XeKhach\QL_XeKhach\GUI\frmDangNhap.cs:line 51
+

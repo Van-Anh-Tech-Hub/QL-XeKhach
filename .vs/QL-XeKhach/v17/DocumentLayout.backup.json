@@ -1,0 +1,351 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HK7\\NoSQL\\QL-XeKhach\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|d:\\hk7\\nosql\\ql-xekhach\\ql_xekhach\\gui\\frmmanagebuscompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmanagebuscompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmmanagebuscompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmanagebuscompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmmanagebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmanagebus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\services\\dataseederservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\dataseederservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmmanagebuscompanies.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmanagebuscompanies.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\helper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\models\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\models\\bus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|D:\\HK7\\NoSQL\\QL-XeKhach\\ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmStatistics.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmStatistics.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmStatistics.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAqwDMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T11:06:04.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Models\\Invoice.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Invoice.cs",
+              "RelativeToolTip": "QL_XeKhach\\Models\\Invoice.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:38:03.473Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmManageBusCompanies.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T14:51:46.183Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:59:21.017Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmManageBusCompanies.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
+              "ViewState": "AgIAABIBAAAAAAAAAAAIwB4BAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:38:18.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CompanyService.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\CompanyService.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\CompanyService.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\CompanyService.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\CompanyService.cs",
+              "ViewState": "AgIAAFkAAAAAAAAAAAA8wHAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T14:43:53.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmDangNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:04:44.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TripService.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\TripService.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\TripService.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\TripService.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\TripService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:14:15.147Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "frmManageBus.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBus.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBus.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBus.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmManageBus.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwB8AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T11:00:24.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataSeederService.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\DataSeederService.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\DataSeederService.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\DataSeederService.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\DataSeederService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T09:41:47.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\InvoiceService.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\InvoiceService.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\InvoiceService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAwwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T09:42:21.825Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Models\\Ticket.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Ticket.cs",
+              "RelativeToolTip": "QL_XeKhach\\Models\\Ticket.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBYAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T15:18:17.051Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "frmStatistics.cs [Design]",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmStatistics.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmStatistics.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T11:04:41.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:04:44.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\User.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Models\\User.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\User.cs",
+              "RelativeToolTip": "QL_XeKhach\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:58:37.198Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "frmManageBusCompanies.Designer.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.Designer.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBusCompanies.Designer.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.Designer.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmManageBusCompanies.Designer.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAiwBYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:05:26.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Helper.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Helper.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Helper.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Helper.cs",
+              "RelativeToolTip": "QL_XeKhach\\Helper.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:50:24.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\UserService.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Services\\UserService.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\UserService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:50:28.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Bus.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Bus.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Models\\Bus.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\Models\\Bus.cs",
+              "RelativeToolTip": "QL_XeKhach\\Models\\Bus.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T08:17:20.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "frmDangNhap.cs",
+              "DocumentMoniker": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "ToolTip": "D:\\HK7\\NoSQL\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmDangNhap.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:04:44.393Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 236,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
