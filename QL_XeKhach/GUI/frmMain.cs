@@ -17,6 +17,13 @@ namespace QL_XeKhach.GUI
         {
             InitializeComponent();
             this.Load += FrmMain_Load;
+            this.FormClosed += FrmMain_FormClosed;
+        }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            frmDangNhap loginForm = new frmDangNhap();
+            loginForm.Show();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)

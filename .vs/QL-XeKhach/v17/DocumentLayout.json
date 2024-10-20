@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|e:\\huit24-25\\hk1\\nosql\\doan\\final\\ql-xekhach\\ql_xekhach\\gui\\frmbanve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmbanve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|e:\\huit24-25\\hk1\\nosql\\doan\\final\\ql-xekhach\\ql_xekhach\\gui\\frmbanve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmbanve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmbanve.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -21,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmmanagebuscompanies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -67,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\services\\companyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\gui\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\ql_xekhach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9A1EF7-C01F-485F-A7F7-BA41186D4F9D}|QL_XeKhach\\QL_XeKhach.csproj|solutionrelative:ql_xekhach\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -94,17 +94,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmBanVe.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmBanVe.cs",
               "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs",
               "RelativeToolTip": "QL_XeKhach\\GUI\\frmBanVe.cs",
-              "ViewState": "AQIAAEYCAAAAAAAAAAAcwB8CAAAAAAAA",
+              "ViewState": "AQIAADQCAAAAAAAAAAAcwB8CAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T18:23:10.438Z",
               "IsPinned": true,
@@ -112,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "frmManageTrip.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageTrip.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageTrip.cs",
@@ -125,31 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmBanVe.cs [Design]",
-              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs",
-              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmBanVe.cs",
-              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs [Design]",
-              "RelativeToolTip": "QL_XeKhach\\GUI\\frmBanVe.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-20T02:14:04.491Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MongoDbContext.cs",
-              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\MongoDbContext.cs",
-              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\MongoDbContext.cs",
-              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\MongoDbContext.cs",
-              "RelativeToolTip": "QL_XeKhach\\Services\\MongoDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T03:25:17.955Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "frmDangNhap.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmDangNhap.cs",
@@ -161,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "frmManageBusCompanies.cs [Design]",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
@@ -172,7 +148,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "frmMain.cs",
+              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAjwBkAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-12T13:04:44.393Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmMain.cs [Design]",
+              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
+              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T10:59:21.017Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MongoDbContext.cs",
+              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\MongoDbContext.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\Services\\MongoDbContext.cs",
+              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\MongoDbContext.cs",
+              "RelativeToolTip": "QL_XeKhach\\Services\\MongoDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T03:25:17.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmBanVe.cs [Design]",
+              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs",
+              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmBanVe.cs",
+              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmBanVe.cs [Design]",
+              "RelativeToolTip": "QL_XeKhach\\GUI\\frmBanVe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-20T02:14:04.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "frmManageBusCompanies.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBusCompanies.cs",
@@ -184,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Invoice.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Models\\Invoice.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\Models\\Invoice.cs",
@@ -196,7 +220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Helper.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Helper.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\Helper.cs",
@@ -208,19 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
-              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
-              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
-              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAjwBMAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-12T13:04:44.393Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "frmStatistics.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmStatistics.cs",
@@ -232,7 +244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TripService.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\TripService.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\Services\\TripService.cs",
@@ -244,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "frmDangNhap.cs [Design]",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmDangNhap.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmDangNhap.cs",
@@ -255,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "frmManageBus.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmManageBus.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmManageBus.cs",
@@ -267,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CompanyService.cs",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\Services\\CompanyService.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\Services\\CompanyService.cs",
@@ -279,7 +291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "frmStatistics.cs [Design]",
               "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmStatistics.cs",
               "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmStatistics.cs",
@@ -298,17 +310,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T10:58:37.198Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs",
-              "RelativeDocumentMoniker": "QL_XeKhach\\GUI\\frmMain.cs",
-              "ToolTip": "E:\\Huit24-25\\HK1\\NoSQL\\DoAn\\final\\QL-XeKhach\\QL_XeKhach\\GUI\\frmMain.cs [Design]",
-              "RelativeToolTip": "QL_XeKhach\\GUI\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T10:59:21.017Z"
             },
             {
               "$type": "Document",
