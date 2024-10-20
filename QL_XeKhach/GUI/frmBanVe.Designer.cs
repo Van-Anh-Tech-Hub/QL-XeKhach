@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSua = new System.Windows.Forms.Button();
+            this.cboDiemden = new System.Windows.Forms.ComboBox();
             this.cboTrangThai = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
@@ -76,7 +76,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvInvoices = new System.Windows.Forms.DataGridView();
-            this.cboDiemden = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTrips)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -89,7 +88,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.cboDiemden);
-            this.groupBox1.Controls.Add(this.btnSua);
             this.groupBox1.Controls.Add(this.cboTrangThai);
             this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.btnReset);
@@ -106,18 +104,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin vé";
             // 
-            // btnSua
+            // cboDiemden
             // 
-            this.btnSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSua.Image = global::QL_XeKhach.Properties.Resources.updated;
-            this.btnSua.Location = new System.Drawing.Point(462, 147);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(152, 41);
-            this.btnSua.TabIndex = 7;
-            this.btnSua.Text = "Lưu";
-            this.btnSua.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSua.UseVisualStyleBackColor = true;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
+            this.cboDiemden.DropDownHeight = 160;
+            this.cboDiemden.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDiemden.FormattingEnabled = true;
+            this.cboDiemden.IntegralHeight = false;
+            this.cboDiemden.Location = new System.Drawing.Point(169, 30);
+            this.cboDiemden.Name = "cboDiemden";
+            this.cboDiemden.Size = new System.Drawing.Size(287, 39);
+            this.cboDiemden.TabIndex = 22;
             // 
             // cboTrangThai
             // 
@@ -611,17 +607,6 @@
             this.dgvInvoices.TabIndex = 1;
             this.dgvInvoices.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvInvoices_CellClick);
             // 
-            // cboDiemden
-            // 
-            this.cboDiemden.DropDownHeight = 160;
-            this.cboDiemden.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cboDiemden.FormattingEnabled = true;
-            this.cboDiemden.IntegralHeight = false;
-            this.cboDiemden.Location = new System.Drawing.Point(169, 30);
-            this.cboDiemden.Name = "cboDiemden";
-            this.cboDiemden.Size = new System.Drawing.Size(287, 39);
-            this.cboDiemden.TabIndex = 22;
-            // 
             // frmBanVe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -671,7 +656,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cboTrangThai;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.DataGridView dgvSeats;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;

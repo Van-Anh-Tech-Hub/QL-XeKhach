@@ -366,30 +366,56 @@ namespace QL_XeKhach.GUI
         private void btnThem_Click(object sender, EventArgs e)
         {
             CreateInvoice();
+            LoadInvoices();
         }
         private async void CreateInvoice()
         {
             if (string.IsNullOrEmpty(selectedTripId))
             {
-                MessageBox.Show("Please select a trip first.");
+                MessageBox.Show("Vui lòng chọn một chuyến xe trước.", "Chưa chọn chuyến xe", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
+            var tripService = new TripService();
             var invoiceService = new InvoiceService();
-            var tickets = new List<Ticket>();
+
+            // Fetch the trip to check seat booking status
+            var trip = await tripService.GetTrip(t => t.Id == selectedTripId, includeReferences: true);
+            if (trip == null)
+            {
+                MessageBox.Show("Không tìm thấy chuyến xe!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var seatNumber = txtSoGhe.Text;
+
+            // Check if the seat is already booked
+            var seat = trip.Seats.FirstOrDefault(s => s.SeatNumber == seatNumber);
+            if (seat != null && seat.IsBooked)
+            {
+                MessageBox.Show($"Ghế số {seatNumber} đã được đặt. Vui lòng chọn ghế khác.", "Ghế không khả dụng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;  // Exit if the seat is already booked
+            }
 
             // Create a new ticket with the selected TripId, SeatNumber, and Price
-            var ticket = new Ticket(selectedTripId, txtSoGhe.Text, decimal.Parse(txtPrice.Text));
-            tickets.Add(ticket);
+            var ticketPrice = decimal.Parse(txtPrice.Text);
+            var ticket = new Ticket(selectedTripId, seatNumber, ticketPrice);
 
+            var tickets = new List<Ticket> { ticket };
+
+            // Create a new invoice with the customer details and ticket list
             var newInvoice = new Invoice(txtCustomerName.Text, txtCustomerPhoneNumber.Text, tickets, txtCustomerEmail.Text);
             await invoiceService.CreateInvoice(newInvoice);
 
-            // Mark the seat as booked in the Trips collection (assuming you have a method for this)
-            //await MarkSeatAsBooked(selectedTripId, txtSoGhe.Text);
+            // Mark the seat as booked in the Trips collection
+            seat.IsBooked = true;
+            await tripService.UpdateTrip(trip.Id, trip);  // Update trip to reflect the seat booking status
 
-            MessageBox.Show("Invoice created successfully!");
+            MessageBox.Show("Hóa đơn đã được tạo thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+            // Optionally refresh the DataGridView or other UI elements if needed
+            LoadInvoices();
+            LoadSeats(selectedTripId);
         }
         private async void LoadInvoices()
         {
@@ -523,31 +549,56 @@ namespace QL_XeKhach.GUI
                 invoice.CustomerPhoneNumber = txtCustomerPhoneNumber.Text;
                 invoice.CustomerEmail = txtCustomerEmail.Text;
 
-                // Logic to handle adding or updating tickets
+                // Get seat number and price from UI
                 var seatNumber = txtSoGhe.Text;
                 var ticketPrice = decimal.Parse(txtPrice.Text);
-                var existingTicket = invoice.Tickets.FirstOrDefault(t => t.SeatNumber == seatNumber);
 
-                if (existingTicket != null)
+                // Get the selected trip ID (assuming `selectedTripId` is set somewhere in your code)
+                var tripId = selectedTripId;
+
+                // Fetch the trip to check seat booking status
+                var trip = await tripService.GetTrip(t => t.Id == tripId, includeReferences: true);
+
+                if (trip != null)
                 {
-                    // Case: Update existing ticket
-                    existingTicket.Price = ticketPrice;  // Update price
+                    // Check if the seat is already booked
+                    var seat = trip.Seats.FirstOrDefault(s => s.SeatNumber == seatNumber);
+                    if (seat != null && seat.IsBooked)
+                    {
+                        MessageBox.Show("Ghế đã được đặt! Vui lòng chọn ghế khác.", "Ghế không khả dụng", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return; // Exit the method if the seat is already booked
+                    }
+
+                    // Logic to handle adding or updating tickets
+                    var existingTicket = invoice.Tickets.FirstOrDefault(t => t.SeatNumber == seatNumber);
+
+                    if (existingTicket != null)
+                    {
+                        // Case: Update existing ticket
+                        existingTicket.Price = ticketPrice;  // Update price of the existing ticket
+                    }
+                    else
+                    {
+                        // Case: Add a new ticket
+                        var newTicket = new Ticket(tripId, seatNumber, ticketPrice);
+                        invoice.AddTicket(newTicket);  // Use the AddTicket method to add the new ticket and update timestamps
+                    }
+
+                    // Mark the seat as booked in the trip and update the trip
+                    seat.IsBooked = true;
+                    await tripService.UpdateTrip(trip.Id, trip);  // Update the trip with the new seat booking status
+
+                    // Update the invoice in the database
+                    await invoiceService.UpdateInvoice(invoiceId, invoice);
+
+                    MessageBox.Show("Cập nhật hoá đơn thành công!");
+                    LoadInvoices();
+                    LoadSeats(selectedTrip.Id);
                 }
                 else
                 {
-                    // Case: Add a new ticket
-                    var newTicket = new Ticket(selectedTripId, seatNumber, ticketPrice);
-                    invoice.AddTicket(newTicket);  // Use the AddTicket method to add new ticket and update timestamps
+                    MessageBox.Show("Không tìm thấy chuyến xe!");
                 }
-
-                // No need to manually calculate the total price, as it's done in the `TotalAmount` property.
-                //lblTotalPrice.Text = invoice.TotalAmount.ToString();  // Update the label showing the total price
-
-                // Update the invoice in the database
-                await invoiceService.UpdateInvoice(invoiceId, invoice);
-
-                MessageBox.Show("Cập nhật hoá đơn thành công!");
-                LoadInvoices();
             }
             else
             {
